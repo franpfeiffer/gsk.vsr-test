@@ -39,6 +39,12 @@
     <meta name="twitter:description"
         content="El virus sincitial respiratorio (VSR) es un virus común contagioso que generalmente causa síntomas leves.">
     <meta name="twitter:image" content="https://www.virussr.com/assets/images/logo.png">
+        <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Favicons -->
     <link href="./assets/images/faviconvsr.jpeg" rel="icon">
     <link href="./assets/images/faviconvsr.jpeg" rel="apple-touch-icon">
@@ -140,6 +146,61 @@
                 </div>
             </div>
         </div>
+
+        <section class="vacunatorios-section">
+            <div class="vacunatorios-container">
+                <div class="panel-izquierdo">
+                    <div class="header-busqueda">
+                        <h2>Encontrá un centro de vacunación</h2>
+                        <p>Buscá el más cercano según tu ubicación</p>
+                    </div>
+
+                    <div class="seccion-filtros">
+                        <div class="filtros-grid">
+                            <div class="grupo-filtro">
+                                <label for="filtroProvincia">Provincia <span style="color: #e74c3c;">*</span></label>
+                                <select id="filtroProvincia" class="select-filtro" required>
+                                    <option value="">Selecciona una provincia</option>
+                                </select>
+                            </div>
+                            <div class="grupo-filtro">
+                                <label for="filtroLocalidad">Localidad</label>
+                                <select id="filtroLocalidad" class="select-filtro" disabled>
+                                    <option value="">Selecciona primero una provincia</option>
+                                </select>
+                            </div>
+                            <div class="grupo-filtro">
+                                <label for="filtroBarrio">Barrio</label>
+                                <select id="filtroBarrio" class="select-filtro" disabled>
+                                    <option value="">Selecciona primero provincia y localidad</option>
+                                </select>
+                            </div>
+                            <div class="grupo-filtro">
+                                <label for="filtroTipo">¿Dónde querés vacunarte?</label>
+                                <select id="filtroTipo" class="select-filtro">
+                                    <option value="">Todos los tipos</option>
+                                    <option value="hospital">🏥 Hospitales</option>
+                                    <option value="vacunatorio">💉 Vacunatorios y Centros de Salud</option>
+                                    <option value="farmacia">✚ Farmacias</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="seccion-resultados">
+                        <div class="resultados-header">
+                            <h3>Resultados</h3>
+                        </div>
+                        <div id="listaResultados" class="lista-resultados">
+                            <div class="loading">Cargando vacunatorios...</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mapa"></div>
+            </div>
+        </section>
+
+
         <div class="main-container__content--second">
             <div class="container__content-second_consejos">
                 <h2>Otros consejos</h2>
@@ -336,6 +397,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="./assets/js/vacunatorios.js"></script>
 </body>
 
 </html>

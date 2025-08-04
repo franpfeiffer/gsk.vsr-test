@@ -1,0 +1,379 @@
+.vacunatorios-section {
+    background-color: #F2F8F8;
+    padding: 5% 0;
+    min-height: 100vh;
+}
+
+.vacunatorios-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 30px;
+    height: 80vh;
+}
+
+.panel-izquierdo {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-busqueda {
+    margin-bottom: 24px;
+}
+
+.header-busqueda h2 {
+    color: #1a365d;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.header-busqueda p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.seccion-filtros {
+    margin-bottom: 24px;
+}
+
+.filtros-grid {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.grupo-filtro {
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-filtro label {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.select-filtro {
+    padding: 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: white;
+    transition: border-color 0.2s;
+}
+
+.select-filtro:focus {
+    outline: none;
+    border-color: #7666EA;
+    box-shadow: 0 0 0 3px rgba(118, 102, 234, 0.1);
+}
+
+.select-filtro:disabled {
+    background-color: #f9fafb;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+.seccion-resultados {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.resultados-header h3 {
+    color: #1a365d;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.lista-resultados {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.resultados-counter {
+    background: #f1f5f9;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.counter-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.counter-number {
+    font-weight: 700;
+    font-size: 18px;
+    color: #7666EA;
+}
+
+.counter-text {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.card-vacunatorio {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.card-vacunatorio:hover {
+    border-color: #7666EA;
+    box-shadow: 0 4px 12px rgba(118, 102, 234, 0.15);
+}
+
+.card-vacunatorio.selected {
+    border-color: #7666EA;
+    background: #faf9ff;
+    box-shadow: 0 4px 12px rgba(118, 102, 234, 0.2);
+}
+
+.card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.card-icon {
+    font-size: 24px;
+    min-width: 24px;
+}
+
+.card-title-section {
+    flex: 1;
+}
+
+.card-titulo {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a365d;
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+.card-tipo {
+    font-size: 12px;
+    color: #7666EA;
+    background: #f1f0ff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.card-content {
+    margin-bottom: 12px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.info-item svg {
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.info-primary {
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+}
+
+.info-secondary {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.card-action {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-ver-mapa {
+    background: #7666EA;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.2s;
+}
+
+.btn-ver-mapa:hover {
+    background: #5b4fc7;
+}
+
+.sin-resultados {
+    text-align: center;
+    padding: 40px 20px;
+    color: #64748b;
+}
+
+.sin-resultados h4 {
+    color: #374151;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px 20px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+#mapa {
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+/* Estilos para marcadores personalizados */
+.custom-marker-wrapper {
+    background: none !important;
+    border: none !important;
+}
+
+.marker-icon {
+    background: white;
+    border: 2px solid #7666EA;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.marker-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para popups */
+.custom-popup .leaflet-popup-content-wrapper {
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.popup-content {
+    font-family: 'Inter', sans-serif;
+}
+
+.popup-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.popup-icon {
+    font-size: 24px;
+    min-width: 24px;
+}
+
+.popup-title h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a365d;
+    margin-bottom: 4px;
+}
+
+.popup-tipo {
+    font-size: 12px;
+    color: #7666EA;
+    background: #f1f0ff;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.popup-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.info-label {
+    font-size: 12px;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-value {
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .vacunatorios-container {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 20px;
+    }
+
+    .panel-izquierdo {
+        order: 2;
+        max-height: 500px;
+    }
+
+    #mapa {
+        order: 1;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .vacunatorios-container {
+        padding: 0 15px;
+    }
+
+    .panel-izquierdo {
+        padding: 20px;
+    }
+
+    .header-busqueda h2 {
+        font-size: 20px;
+    }
+
+    #mapa {
+        height: 350px;
+    }
+}

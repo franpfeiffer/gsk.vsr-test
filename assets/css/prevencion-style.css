@@ -280,8 +280,1164 @@
     }
 }
 
-@media (min-width: 1600px) {    
+@media (min-width: 1600px) {
     .container__content-second_consejos {
         padding: 2rem 10rem;
     }
+}
+
+
+
+/* ======================== MAPA INTERACTIVO DE VACUNATORIOS - OPTIMIZADO ======================== */
+
+/* VARIABLES PARA MAPA DE VACUNATORIOS */
+:root {
+    --primary-color: #7666EA;
+    --primary-hover: #6552f6;
+    --secondary-color: #9794EB;
+    --accent-color: #89D7F0;
+    --text-dark: #1E1E1E;
+    --text-light: #FFFFFF;
+    --text-gray: #666666;
+    --bg-light: #F8F9FA;
+    --bg-white: #FFFFFF;
+    --border-color: #E0E4E7;
+    --border-radius: 12px;
+    --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* ======================== MAPA INTERACTIVO DE VACUNATORIOS - OPTIMIZADO ======================== */
+
+/* SECCIÓN DEL MAPA */
+.vacunatorios-section {
+    background-color: #F2F8F8;
+    padding: 5% 0;
+    min-height: 100vh;
+}
+
+/* CONTENEDOR PRINCIPAL DEL MAPA */
+.vacunatorios-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 15px;
+    height: 110vh;
+}
+
+/* PANEL IZQUIERDO */
+.panel-izquierdo {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER DE BÚSQUEDA */
+.header-busqueda {
+    margin-bottom: 0px;
+}
+
+.header-busqueda h2 {
+    color: #1a365d;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.header-busqueda p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* SECCIÓN DE FILTROS */
+.seccion-filtros {
+}
+
+.filtros-grid {
+    display: grid;
+    grid-template-columns: 25px 25px 25px;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.grupo-filtro {
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-filtro label {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.select-filtro {
+    padding: 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: white;
+    transition: border-color 0.2s;
+}
+
+.select-filtro:focus {
+    outline: none;
+    border-color: #7666EA;
+    box-shadow: 0 0 0 3px rgba(118, 102, 234, 0.1);
+}
+
+.select-filtro:disabled {
+    background-color: #f9fafb;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* SECCIÓN DE RESULTADOS */
+.seccion-resultados {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.resultados-header h3 {
+    color: #1a365d;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.lista-resultados {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+/* CONTADOR DE RESULTADOS */
+.resultados-counter {
+    background: #f1f5f9;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.counter-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.counter-number {
+    font-weight: 700;
+    font-size: 18px;
+    color: #7666EA;
+}
+
+.counter-text {
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* CARDS DE VACUNATORIO */
+.card-vacunatorio {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.card-vacunatorio:hover {
+    border-color: #7666EA;
+    box-shadow: 0 4px 12px rgba(118, 102, 234, 0.15);
+}
+
+.card-vacunatorio.selected {
+    border-color: #7666EA;
+    background: #faf9ff;
+    box-shadow: 0 4px 12px rgba(118, 102, 234, 0.2);
+}
+
+.card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.card-icon {
+    font-size: 24px;
+    min-width: 24px;
+}
+
+.card-title-section {
+    flex: 1;
+}
+
+.card-titulo {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a365d;
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+.card-tipo {
+    font-size: 12px;
+    color: #7666EA;
+    background: #f1f0ff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.card-content {
+    margin-bottom: 12px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.info-item svg {
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.info-primary {
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+}
+
+.info-secondary {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.card-action {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-ver-mapa {
+    background: #7666EA;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.2s;
+}
+
+.btn-ver-mapa:hover {
+    background: #5b4fc7;
+}
+
+/* SIN RESULTADOS */
+.sin-resultados {
+    text-align: center;
+    padding: 40px 20px;
+    color: #64748b;
+}
+
+.sin-resultados h4 {
+    color: #374151;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px 20px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* MAPA */
+#mapa {
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+/* MARCADORES PERSONALIZADOS */
+.custom-marker-wrapper {
+    background: none !important;
+    border: none !important;
+}
+
+.marker-icon {
+    background: white;
+    border: 2px solid #7666EA;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.marker-icon:hover {
+    transform: scale(1.1);
+}
+
+.marker-icon[data-tipo="Hospital"] {
+    background: #e74c3c;
+}
+
+.marker-icon[data-tipo="Farmacia"] {
+    background: #2ecc71;
+    font-size: 15px;
+}
+
+.marker-icon[data-tipo="Centro de Salud"] {
+    background: #7666EA;
+}
+
+/* POPUPS */
+.custom-popup .leaflet-popup-content-wrapper {
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.popup-content {
+    font-family: 'Inter', sans-serif;
+}
+
+.popup-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.popup-icon {
+    font-size: 24px;
+    min-width: 24px;
+}
+
+.popup-title h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a365d;
+    margin-bottom: 4px;
+}
+
+.popup-tipo {
+    font-size: 12px;
+    color: #7666EA;
+    background: #f1f0ff;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.popup-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.info-label {
+    font-size: 12px;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-value {
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .vacunatorios-container {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 20px;
+    }
+
+    .panel-izquierdo {
+        order: 2;
+        max-height: 500px;
+    }
+
+    #mapa {
+        order: 1;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .vacunatorios-container {
+        padding: 0 15px;
+    }
+
+    .panel-izquierdo {
+        padding: 20px;
+    }
+
+    .header-busqueda h2 {
+        font-size: 20px;
+    }
+
+    #mapa {
+        height: 350px;
+    }
+}
+
+/* Estilos adicionales para marcadores específicos por tipo */
+.custom-marker-wrapper .marker-icon[data-tipo*="farmacia"] {
+    background-color: #28a745 !important;
+    border: 2px solid white !important;
+    color: white !important;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.custom-marker-wrapper .marker-icon[data-tipo*="pharmacy"] {
+    background-color: #28a745 !important;
+    border: 2px solid white !important;
+    color: white !important;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.custom-marker-wrapper .marker-icon[data-tipo*="droguería"] {
+    background-color: #28a745 !important;
+    border: 2px solid white !important;
+    color: white !important;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.custom-marker-wrapper .marker-icon[data-tipo*="drogueria"] {
+    background-color: #28a745 !important;
+    border: 2px solid white !important;
+    color: white !important;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+/* Estilos para diferentes tipos de marcadores en el mapa */
+.marker-icon[data-tipo*="Hospital"], .marker-icon[data-tipo*="hospital"] {
+    background: #e74c3c !important;
+}
+
+.marker-icon[data-tipo*="Farmacia"], .marker-icon[data-tipo*="farmacia"] {
+    background-color: #2ecc71 !important;
+    border: 2px solid white !important;
+    color: white !important;
+    box-shadow: 0 2px 8px rgba(46, 204, 113, 0.3);
+}
+
+.marker-icon[data-tipo*="Centro"], .marker-icon[data-tipo*="centro"], .marker-icon[data-tipo*="Vacunatorio"], .marker-icon[data-tipo*="vacunatorio"] {
+    background: #7666EA !important;
+}
+
+/* Estados adicionales para los filtros */
+.select-filtro:required:invalid {
+    border-color: #e74c3c;
+    background-color: #fdf2f2;
+}
+
+.select-filtro:required:valid {
+    border-color: #27ae60;
+}
+
+.grupo-filtro label span {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Mensaje inicial mejorado */
+.sin-resultados {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #64748b;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    margin: 1rem 0;
+    border: 2px dashed #dee2e6;
+}
+
+.sin-resultados h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #7666EA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.sin-resultados h4::before {
+    content: "📍";
+    font-size: 1.5rem;
+}
+
+/* Animación sutil para el mensaje inicial */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sin-resultados {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Optimizaciones de performance */
+.vacunatorios-container * {
+    box-sizing: border-box;
+
+
+}
+
+.lista-resultados>* {
+    contain: layout style;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .card-vacunatorio,
+    .btn-ver-mapa {
+        transition: all 0.1s ease;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}border: 1px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-refresh:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+#mapa {
+    flex: 1;
+    width: 100%;
+    position: relative;
+    background: #f8f9fa;
+}
+
+/* LOADING OPTIMIZADO */
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: var(--text-gray);
+}
+
+.loading::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--border-color);
+    border-top: 2px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    .vacunatorios-container {
+        grid-template-columns: 380px 1fr;
+    }
+}
+
+@media (max-width: 1024px) {
+    .vacunatorios-container {
+        grid-template-columns: 1fr;
+        height: auto;
+        margin: 1rem;
+    }
+
+    .panel-mapa {
+        order: -1;
+        height: 600px;
+    }
+
+    .panel-izquierdo {
+        max-height: 3000px;
+    }
+
+    .lista-resultados {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .vacunatorios-container {
+        grid-template-columns: 1fr;
+        height: auto;
+        margin: 1rem;
+    }
+
+    .panel-mapa {
+        order: -1;
+        height: 600px;
+    }
+
+    .panel-izquierdo {
+        max-height: 3000px;
+    }
+    .filtros-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-busqueda {
+        padding: 0.5rem;
+    }
+
+    .seccion-filtros {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 0;
+        padding-top: 8px;
+    }
+
+    .seccion-resultados {
+        padding: 1rem;
+    }
+}
+
+/* OPTIMIZACIONES DE PERFORMANCE */
+.vacunatorios-container * {
+    box-sizing: border-box;
+}
+
+/* Prevenir reflow innecesario */
+.lista-resultados>* {
+    contain: layout style;
+}
+
+/* Optimizar animaciones para 60fps */
+@media (prefers-reduced-motion: no-preference) {
+
+    .card-vacunatorio,
+    .btn-ver-mapa,
+    .checkbox-item {
+        transition: all 0.1s ease;
+    }
+}
+
+/* Sin animaciones para usuarios que las prefieren deshabilitadas */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ======================== FIN MAPA INTERACTIVO MEJORADO ======================== */
+
+/* Estilos para provincia obligatoria */
+.grupo-filtro label span {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.select-filtro:required:invalid {
+    border-color: #e74c3c;
+    background-color: #fdf2f2;
+}
+
+.select-filtro:required:valid {
+    border-color: #27ae60;
+}
+
+/* Mensaje inicial mejorado */
+.sin-resultados {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--text-gray);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    margin: 1rem 0;
+    border: 2px dashed #dee2e6;
+}
+
+.sin-resultados h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.sin-resultados h4::before {
+    content: "📍";
+    font-size: 1.5rem;
+}
+
+.sin-resultados p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-gray);
+}
+
+/* Animación sutil para el mensaje inicial */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sin-resultados {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Destacar el selector de provincia cuando está vacío */
+.select-filtro[required]:invalid:focus {
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+    border-color: #e74c3c;
+}
+
+/* Mejorar la apariencia del mapa sin contenido */
+#mapa.empty-state {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa.empty-state::before {
+    content: "🗺️ Selecciona una provincia para ver los vacunatorios";
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 2rem;
+    border: 2px dashed #dee2e6;
+    border-radius: 12px;
+    background: white;
+}
+
+/* Estilos para diferentes tipos de marcadores */
+.marker-icon[data-tipo*="Hospital"], .marker-icon[data-tipo*="hospital"] {
+    background: #e74c3c !important;
+}
+
+.marker-icon[data-tipo*="Farmacia"], .marker-icon[data-tipo*="farmacia"] {
+    background-color: #2ecc71 !important;
+    border: 2px solid white !important;
+    color: white !important;
+    box-shadow: 0 2px 8px rgba(46, 204, 113, 0.3);
+}
+
+.marker-icon[data-tipo*="Centro"], .marker-icon[data-tipo*="centro"], .marker-icon[data-tipo*="Vacunatorio"], .marker-icon[data-tipo*="vacunatorio"] {
+    background: var(--primary-color) !important;
+}
+
+/* Leyenda actualizada para tipos */
+.leyenda-item:nth-child(1)::before {
+    background: #e74c3c; /* Hospitales */
+}
+
+.leyenda-item:nth-child(2)::before {
+    background: var(--primary-color); /* Centros de Salud */
+}
+
+.leyenda-item:nth-child(3)::before {
+    background: #2ecc71; /* Farmacias */
+}
+
+/* Estilos adicionales para el filtro de barrios */
+
+/* Asegurar que el grid de filtros tenga el espacio correcto */
+.filtros-grid {
+    display: grid;
+    grid-template-columns: 8.2rem 6rem 6rem;
+    gap: 15px;
+}
+
+/* Estilos para el grupo de filtro de barrio */
+.grupo-filtro {
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-filtro label {
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: #333;
+    font-size: 14px;
+}
+
+.select-filtro {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.select-filtro:hover {
+    border-color: #7666EA;
+}
+
+.select-filtro:focus {
+    outline: none;
+    border-color: #7666EA;
+    box-shadow: 0 0 0 3px rgba(118, 102, 234, 0.1);
+}
+
+.select-filtro:disabled {
+    background-color: #f5f5f5;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Responsive design para el grid de filtros */
+@media (max-width: 768px) {
+    .filtros-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .filtros-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .grupo-filtro:nth-child(3) {
+        grid-column: span 2;
+    }
+}
+
+/* Indicador visual para filtros activos */
+.select-filtro.active {
+    border-color: #7666EA;
+    background-color: #f8f7ff;
+}
+
+/* Estilos para el contador cuando hay filtros activos */
+.filtros-activos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e8f4f8;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.filtro-tag {
+    background-color: #7666EA;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.filtro-tag button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.filtro-tag button:hover {
+    opacity: 0.8;
+}
+
+/* Animación para cambios de filtro */
+.lista-resultados {
+    transition: opacity 0.3s ease;
+}
+
+.lista-resultados.updating {
+    opacity: 0.6;
+}
+
+/* Mejoras para la visualización de direcciones con barrio */
+.info-primary {
+    font-weight: 500;
+    color: #333;
+    line-height: 1.3;
+    margin-bottom: 2px;
+}
+
+.info-secondary {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.popup-content .info-value {
+    line-height: 1.4;
+    word-wrap: break-word;
+    max-width: 250px;
+}
+
+/* Estilos para el mensaje de carga durante filtrado */
+.filtro-loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-style: italic;
+}
+
+.filtro-loading::before {
+    content: "⏳ ";
+    margin-right: 5px;
+}
+
+/* Indicador de número de filtros activos */
+.filtros-contador {
+    position: relative;
+}
+
+.filtros-contador::after {
+    content: attr(data-count);
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #7666EA;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    min-width: 16px;
+    text-align: center;
+    display: none;
+}
+
+.filtros-contador.has-filters::after {
+    display: block;
+}
+
+/* Mejoras en la accesibilidad */
+.select-filtro:focus-visible {
+    outline: 2px solid #7666EA;
+    outline-offset: 2px;
+}
+
+/* Estilos para opciones agrupadas (si es necesario) */
+.select-filtro optgroup {
+    font-weight: bold;
+    color: #333;
+}
+
+.select-filtro optgroup option {
+    font-weight: normal;
+    padding-left: 20px;
+}
+.grupo-filtro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.grupo-filtro label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+
+/* Agregar estilos para campos deshabilitados */
+.select-filtro:disabled {
+    background-color: #f5f5f5;
+    color: #999;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Agregar indicador visual para campos obligatorios */
+.grupo-filtro.required label::after {
+    content: " *";
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Animación suave para cuando se habilitan los campos */
+.grupo-filtro {
+    transition: opacity 0.3s ease;
+}
+
+.grupo-filtro.disabled {
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .header-busqueda p {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-busqueda p {
+        display: none;
+    }
+}
+
+.custom-marker-wrapper .marker-icon[data-tipo*="farmacia"] {
+    background-color: #28a745 !important;
+    border: 2px solid white !important;
+    color: white !important;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.custom-marker-wrapper .marker-icon[data-tipo*="pharmacy"] {
+    background-color: #28a745 !important;
+    border: 2px solid white !important;
+    color: white !important;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.custom-marker-wrapper .marker-icon[data-tipo*="droguería"] {
+    background-color: #28a745 !important;
+    border: 2px solid white !important;
+    color: white !important;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.custom-marker-wrapper .marker-icon[data-tipo*="drogueria"] {
+    background-color: #28a745 !important;
+    border: 2px solid white !important;
+    color: white !important;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
 }
