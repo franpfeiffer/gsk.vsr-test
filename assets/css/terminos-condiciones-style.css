@@ -1,0 +1,43 @@
+.main-terminos-condiciones {
+    padding: 4%;
+}
+.container-terminos-condiciones {
+    margin-top: 15%;
+}
+.container-terminos-condiciones h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.container-terminos-condiciones p {
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .main-terminos-condiciones {
+        padding: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-terminos-condiciones {
+        padding: 80px;
+    }
+}
+
+@media (min-width: 1360px) {
+    .main-terminos-condiciones {
+        padding: 80px;
+    }
+}
+@media (min-width: 1600px) {
+    .container-terminos-condiciones {
+        padding: 0px 130px;
+    }
+    .container-terminos-condiciones {
+        margin-top: 10%;
+    }
+}

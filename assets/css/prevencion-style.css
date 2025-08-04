@@ -1,0 +1,287 @@
+.main-container__content--first {
+    background-color: #FBFBFB;
+    display: flex;
+    padding: 80px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+    width: 100%;
+}
+
+.container__content-first-paragraph {
+    display: flex;
+    padding-bottom: 80px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    border-bottom: 1px solid var(--color-primario-neutral-base, #4F575E);
+    gap: 60px;
+    width: 100%;
+}
+
+.container__content-first-paragraph h2 {
+    color: var(--color-primario-brand-base, #1F4827);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.container__content-first-vacunacion {
+    width: 100%;
+
+}
+
+.container__content-first-vacunacion h1 {
+    color: var(--color-primario-brand-base, #1F4827);
+    flex: 1 0 0;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+.container__content-first-vacunacion p {
+    color: var(--color-primario-neutral-900, #000);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container__content-first-vacunacion p strong {
+    color: var(--color-primario-neutral-900, #000);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.container__content-first-prreguntas {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: stretch;
+    border-radius: 16px;
+    background: var(--color-secundario-lima-base, #D3FB58);
+    padding: 48px 32px;
+    text-align: center;
+    gap: 80px;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* .box__preguntas i {
+    font-size: 40px;
+    color: var(--color-primario-brand-base, #1F4827);
+    margin-bottom: 16px;
+} */
+.container__icon__list__prreguntas {
+    border-radius: 30px;
+    background: var(--color-primario-brand-base, #1F4827);
+    width: 2.7rem;
+    height: 2.7rem;
+    margin: 0.7rem auto;
+    display: flex;
+}
+.container__icon__list__prreguntas img {
+    margin: auto auto;
+}
+
+.box__preguntas p {
+    flex: 1 0 0;
+    color: var(--color-primario-neutral-900, #000);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main-container__content--second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    background-color: #F7F9FD;
+    width: 100%;
+}
+
+.container__content-second_consejos {
+    display: flex;
+    padding: 80px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    background-color: var(--color-primario-brand-base, #1F4827);
+}
+
+.container__content-second_consejos h2 {
+    flex: 1 0 0;
+    color: var(--color-primario-neutral-100, #F7F9FD);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.container__content-second_consejos p {
+    align-self: stretch;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container__content-second_cards {
+    display: flex;
+    padding: 40px 24px 80px 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    justify-content: center;
+}
+
+.consejos__cards {
+    display: flex;
+    width: 40.47%;
+    max-width: 220px;
+    padding: 48px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: var(--color-secundario-lima-base, #D3FB58);
+}
+
+.consejos__cards__img img {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 4.437px 6px 4.198px 6.018px;
+    justify-content: center;
+    align-items: center;
+}
+
+.consejos__cards h5 {
+    color: var(--color-primario-neutral-900, #000);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (min-width: 600px) {}
+
+@media (min-width: 768px) {
+    .container__content-first-vacunacion h1  {
+        font-size: 39px;
+    }
+    .container__content-first-paragraph h2 {
+        display: none;
+    }
+
+    .container__content-first-paragraph {
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    .container__content-first-paragraph p {
+        color: var(--color-primario-neutral-900, #000);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .main-container__content--second {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .container__content-second_consejos {
+        display: flex;
+        width: 55%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 5rem;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .container__content-second_consejos h2 {
+        flex: 0;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 39px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .main-container__content--first {
+        padding: 80px 138px;
+        gap: 40px;
+    }
+
+    .container__content-first-prreguntas {
+        flex-direction: row;
+    }
+
+    .box__preguntas {
+        width: 33%;
+    }
+}
+
+@media (min-width: 1360px) {
+    .container__content-first-prreguntas {
+        max-width: 1600px;
+    }
+    .main-container__content--first {
+        padding: 80px 75px;
+    }
+
+    .container__content-second_cards {
+        padding-left: 0px;
+        margin-right: 2.1rem;
+    }
+    .main-container__content--second {
+        gap: 10px;
+    }
+    .consejos__cards {
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 1600px) {    
+    .container__content-second_consejos {
+        padding: 2rem 10rem;
+    }
+}
