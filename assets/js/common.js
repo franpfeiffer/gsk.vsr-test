@@ -1,6 +1,6 @@
-window.addEventListener("load", function () {
+window.addEventListener("load", function() {
     const hamburguer = document.getElementById("hamburguer");
-    hamburguer.addEventListener("click", function () {
+    hamburguer.addEventListener("click", function() {
         document.querySelector('.nav-container').classList.toggle('active');
         hamburguer.classList.toggle("fa-bars");
         hamburguer.classList.toggle("fa-xmark");
@@ -11,7 +11,7 @@ window.addEventListener("load", function () {
     const menuList = document.getElementById('menu');
     const navContainer = document.querySelector('.nav-container');
 
-    window.addEventListener('scroll', function () {
+    window.addEventListener('scroll', function() {
         if (window.innerWidth > 770) {
             if (window.scrollY > 30) {
                 navContainer.classList.add('efecto-menu-conatainer');
@@ -56,13 +56,13 @@ window.addEventListener("load", function () {
             </div>
         `;
 
-        // Asignamos los eventos de clic a los nuevos botones en cada apertura
-        document.getElementById('noBtn').addEventListener('click', () => showMessageAfterResponse('No'));
-        document.getElementById('yesBtn').addEventListener('click', () => showMessageAfterResponse('Sí'));
+            // Asignamos los eventos de clic a los nuevos botones en cada apertura
+            document.getElementById('noBtn').addEventListener('click', () => showMessageAfterResponse('No'));
+            document.getElementById('yesBtn').addEventListener('click', () => showMessageAfterResponse('Sí'));
 
-        modal.style.display = 'flex';
-        localStorage.removeItem('modalHideTime');
-            
+            modal.style.display = 'flex';
+            localStorage.removeItem('modalHideTime');
+
         } else {
             console.log("El modal ya fue mostrado en esta sesión y no ha pasado el tiempo suficiente.");
         }
@@ -101,22 +101,25 @@ window.addEventListener("load", function () {
         modal.style.display = 'none';
     }
 
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 1850) {             
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+
+        if (scrollPosition >= documentHeight - 100) {
             showModal();
         }
     });
 
-    yesBtn.addEventListener('click', function () {
+    yesBtn.addEventListener('click', function() {
         showMessageAfterResponse('Sí');
     });
 
-    noBtn.addEventListener('click', function () {
+    noBtn.addEventListener('click', function() {
         showMessageAfterResponse('No');
     });
 
-    
-    document.querySelector('.references').addEventListener('click', function () {
+
+    document.querySelector('.references').addEventListener('click', function() {
         let referencias = document.getElementById('referencias');
         referencias.classList.toggle('show');
 
@@ -129,7 +132,7 @@ window.addEventListener("load", function () {
             icon.classList.add('fa-plus');
         }
     });
-    document.querySelector('#button-pdf').addEventListener('click', function () {
+    document.querySelector('#button-pdf').addEventListener('click', function() {
         const loader = document.createElement("span");
         loader.classList.add("loader");
         const svg = this.querySelector("svg");
