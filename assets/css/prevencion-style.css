@@ -439,7 +439,7 @@
 .counter-number {
     font-weight: 700;
     font-size: 18px;
-    color: #7666EA;
+    color: #2ECC71;
 }
 
 .counter-text {
@@ -459,7 +459,7 @@
 }
 
 .card-vacunatorio:hover {
-    border-color: #7666EA;
+    border-color: #D3FB58;
     box-shadow: 0 4px 12px rgba(118, 102, 234, 0.15);
 }
 
@@ -495,8 +495,8 @@
 
 .card-tipo {
     font-size: 12px;
-    color: #7666EA;
-    background: #f1f0ff;
+    color: #fff;
+    background: #1F4827;
     padding: 4px 8px;
     border-radius: 4px;
     display: inline-block;
@@ -535,7 +535,7 @@
 }
 
 .btn-ver-mapa {
-    background: #7666EA;
+    background: #1F4827;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -550,7 +550,7 @@
 }
 
 .btn-ver-mapa:hover {
-    background: #5b4fc7;
+    background: #D3FB58;
 }
 
 /* SIN RESULTADOS */
@@ -649,8 +649,8 @@
 
 .popup-tipo {
     font-size: 12px;
-    color: #7666EA;
-    background: #f1f0ff;
+    color: #fff;
+    background: #1F4827;
     padding: 4px 8px;
     border-radius: 4px;
 }
@@ -819,7 +819,7 @@
     margin: 0 0 0.5rem 0;
     font-size: 1.1rem;
     font-weight: 600;
-    color: #7666EA;
+    color: #1F4827;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1173,12 +1173,12 @@
 }
 
 .select-filtro:hover {
-    border-color: #7666EA;
+    border-color: #1F4827;
 }
 
 .select-filtro:focus {
     outline: none;
-    border-color: #7666EA;
+    border-color: #1F4827;
     box-shadow: 0 0 0 3px rgba(118, 102, 234, 0.1);
 }
 
