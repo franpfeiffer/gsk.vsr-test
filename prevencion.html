@@ -146,7 +146,7 @@
                 </div>
             </div>
         </div>
-        <section class="vacunatorios-section">
+        <section class="vacunatorios-section" style="background-color: #F2F8F8; padding: 5% 0;">
             <div class="vacunatorios-container">
                 <div class="panel-izquierdo">
                     <div class="header-busqueda">
@@ -163,26 +163,27 @@
                                 </select>
                             </div>
                             <div class="grupo-filtro">
-                                <label for="filtroLocalidad">Localidad</label>
-                                <select id="filtroLocalidad" class="select-filtro" disabled>
-                                    <option value="">Selecciona primero una provincia</option>
+                                <label for="filtroLocalidad">Localidad <span style="color: #e74c3c;">*</span></label>
+                                <select id="filtroLocalidad" class="select-filtro" required>
+                                    <option value="">Todas las localidades</option>
                                 </select>
                             </div>
                             <div class="grupo-filtro">
                                 <label for="filtroBarrio">Barrio</label>
-                                <select id="filtroBarrio" class="select-filtro" disabled>
-                                    <option value="">Selecciona primero provincia y localidad</option>
+                                <select id="filtroBarrio" class="select-filtro">
+                                    <option value="">Todos los barrios</option>
                                 </select>
                             </div>
-                            <div class="grupo-filtro">
-                                <label for="filtroTipo">¿Dónde querés vacunarte?</label>
-                                <select id="filtroTipo" class="select-filtro">
-                                    <option value="">Todos los tipos</option>
-                                    <option value="hospital">🏥 Hospitales</option>
-                                    <option value="vacunatorio">💉 Vacunatorios y Centros de Salud</option>
-                                    <option value="farmacia">✚ Farmacias</option>
-                                </select>
-                            </div>
+                        </div>
+
+                        <div class="grupo-filtro">
+                            <label for="filtroTipo">¿Dónde querés vacunarte?</label>
+                            <select id="filtroTipo" class="select-filtro">
+                                <option value="">Todos los tipos</option>
+                                <option value="hospital">🏥 Hospitales</option>
+                                <option value="vacunatorio">💉 Vacunatorios y Centros de Salud</option>
+                                <option value="farmacia">✚ Farmacias</option>
+                            </select>
                         </div>
                     </div>
 
@@ -195,7 +196,8 @@
                         </div>
                     </div>
                 </div>
-                <div id="mapa"></div>
+                    <div id="mapa"></div>
+                </div>
             </div>
         </section>
 
