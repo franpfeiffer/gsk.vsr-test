@@ -314,9 +314,9 @@
     grid-template-columns: 420px 1fr;
     height: 100vh;
     max-width: 1400px;
-    margin: 2rem auto;
+    margin: auto;
     background: var(--bg-white);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
     overflow: hidden;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
     will-change: auto;
@@ -1540,4 +1540,17 @@
     font-size: 16px;
     font-weight: bold;
     box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.disclaimer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    color: #333;
 }
