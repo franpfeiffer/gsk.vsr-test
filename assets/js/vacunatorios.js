@@ -825,7 +825,10 @@ class VacunatoriosMapOptimized {
             this.map.removeLayer(this.currentTileLayer);
         }
 
-        this.currentTileLayer = L.tileLayer(provider.url, provider.options);
+        this.currentTileLayer = L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+            attribution: '&copy; Google',
+            maxZoom: 20
+        });
         this.currentTileLayer.addTo(this.map);
     }
 
