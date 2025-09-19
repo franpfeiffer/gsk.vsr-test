@@ -8,6 +8,7 @@ class VacunatoriosMapOptimized {
         this.currentTileLayer = null;
         this.isLoading = false;
         this.renderQueue = [];
+        this.geocodingCache = {};
 
         this.COORDINATES_JSON_URL = '../../data/vacunatorios_coordinates_con_barrios.json';
         this.SHEETS_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRMcbWuANTMtRJIPZ4_srNBSBrvXNxiBHyp2L37Gy1wZCFuXkmJmkeyPFzuEhnWj1OSiEODBqwQne2A/pub?output=csv';
@@ -15,6 +16,7 @@ class VacunatoriosMapOptimized {
 
         this.CACHE_KEY = 'vacunatorios_cache_v5';
         this.COORDINATES_CACHE_KEY = 'coordinates_cache_v5';
+        this.GEOCODE_CACHE_KEY = 'geocode_cache_v1';
         this.CACHE_EXPIRY = 24 * 60 * 60 * 1000;
         this.PRELOAD_CACHE_KEY = 'vacunatorios_preload_v5';
 
@@ -23,7 +25,7 @@ class VacunatoriosMapOptimized {
                 name: 'CartoDB Positron',
                 url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
                 options: {
-                    attribution: '© OpenStreetMap contributors, © CARTO',
+                    attribution: 'Â© OpenStreetMap contributors, Â© CARTO',
                     subdomains: 'abcd',
                     maxZoom: 18,
                     updateWhenIdle: true,
@@ -41,6 +43,98 @@ class VacunatoriosMapOptimized {
 
         this.currentTileProviderIndex = 0;
         this.searchThrottle = this.throttle(this.filterVacunatorios.bind(this), 300);
+        this.loadGeocodingCache();
+    }
+
+    loadGeocodingCache() {
+        try {
+            const cached = localStorage.getItem(this.GEOCODE_CACHE_KEY);
+            this.geocodingCache = cached ? JSON.parse(cached) : {};
+        } catch (error) {
+            this.geocodingCache = {};
+        }
+    }
+
+    saveGeocodingCache() {
+        try {
+            localStorage.setItem(this.GEOCODE_CACHE_KEY, JSON.stringify(this.geocodingCache));
+        } catch (error) {
+            console.error('Error guardando cache de geocoding:', error);
+        }
+    }
+
+    async geocodeAddress(address) {
+        const cacheKey = address.toLowerCase().trim();
+
+        if (this.geocodingCache[cacheKey]) {
+            return this.geocodingCache[cacheKey];
+        }
+
+        const encodedAddress = encodeURIComponent(address);
+
+        try {
+            await new Promise(resolve => setTimeout(resolve, 100));
+
+            const response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodedAddress}&countrycodes=ar&limit=1`);
+            const data = await response.json();
+
+            let result;
+            if (data && data.length > 0) {
+                result = {
+                    lat: parseFloat(data[0].lat),
+                    lng: parseFloat(data[0].lon),
+                    success: true,
+                    address: data[0].display_name
+                };
+            } else {
+                result = { success: false };
+            }
+
+            if (result.success) {
+                this.geocodingCache[cacheKey] = result;
+                this.saveGeocodingCache();
+            }
+
+            return result;
+        } catch (error) {
+            console.error('Error geocoding:', error);
+            return { success: false };
+        }
+    }
+
+    buildFullAddress(vacunatorio) {
+        const domicilio = vacunatorio.domicilio || vacunatorio.Domicilio || '';
+        const localidad = vacunatorio.localidad || vacunatorio.Localidad || '';
+        const provincia = vacunatorio.provincia || vacunatorio.Provincia || '';
+        const barrio = vacunatorio.barrio || vacunatorio.Barrio || '';
+
+        let address = domicilio;
+        if (barrio) address += `, ${barrio}`;
+        address += `, ${localidad}`;
+        if (provincia) address += `, ${provincia}`;
+        address += ', Argentina';
+
+        return address;
+    }
+
+    async addMarkerFromAddress(vacunatorio) {
+        if (vacunatorio.lat && vacunatorio.lng) {
+            this.addMarkerFromCoordinates(vacunatorio);
+            return true;
+        }
+
+        const direccion = this.buildFullAddress(vacunatorio);
+        const result = await this.geocodeAddress(direccion);
+
+        if (result.success) {
+            vacunatorio.lat = result.lat;
+            vacunatorio.lng = result.lng;
+            this.addMarkerFromCoordinates(vacunatorio);
+            return true;
+        } else {
+            console.warn(`No se pudo geocodificar: ${direccion}`);
+            return false;
+        }
     }
 
     async preloadData() {
@@ -169,7 +263,7 @@ class VacunatoriosMapOptimized {
         } catch (error) {
             console.error('Error inicializando mapa:', error);
             this.hideLoading();
-            this.showError('Error inicializando el mapa. Por favor, recarga la página.');
+            this.showError('Error inicializando el mapa. Por favor, recarga la pÃ¡gina.');
         }
     }
 
@@ -233,38 +327,37 @@ class VacunatoriosMapOptimized {
         await this.loadVacunatoriosOriginal();
     }
 
-    displayAllMarkers() {
+    async displayAllMarkers() {
         if (!this.provinciaSeleccionada) {
             this.showInitialMessage();
             return;
         }
 
-        console.log('Mostrando marcadores...');
+        console.log('Mostrando marcadores desde direcciones...');
         this.clearMarkers();
         this.bounds = L.latLngBounds();
 
-        const chunkSize = 50;
+        const chunkSize = 10;
         let processed = 0;
 
-        const processChunk = () => {
+        const processChunk = async () => {
             const chunk = this.coordinatesData.slice(processed, processed + chunkSize);
 
-            chunk.forEach(vacunatorio => {
-                if (vacunatorio.lat && vacunatorio.lng) {
-                    this.addMarkerFromCoordinates(vacunatorio);
-                }
+            const geocodePromises = chunk.map(async (vacunatorio) => {
+                await this.addMarkerFromAddress(vacunatorio);
             });
 
+            await Promise.all(geocodePromises);
             processed += chunkSize;
 
             if (processed < this.coordinatesData.length) {
-                requestAnimationFrame(processChunk);
+                setTimeout(processChunk, 300);
             } else {
                 this.finalizarMarcadores();
             }
         };
 
-        requestAnimationFrame(processChunk);
+        processChunk();
     }
 
     finalizarMarcadores() {
@@ -333,7 +426,7 @@ class VacunatoriosMapOptimized {
                 .filter(v => (v.provincia || v.Provincia) === this.filters.provincia)
                 .map(v => v.tipo || v.Tipo || 'Sin tipo')
             )].sort();
-            console.log('Tipos únicos en Buenos Aires:', tiposUnicos);
+            console.log('Tipos Ãºnicos en Buenos Aires:', tiposUnicos);
 
             const ejemplosHospitales = dataToFilter
                 .filter(v => (v.provincia || v.Provincia) === this.filters.provincia)
@@ -375,12 +468,11 @@ class VacunatoriosMapOptimized {
                 switch (this.filters.tipo) {
                     case 'hospital':
                         matchesType = tipoNormalizado.includes('hospital') ||
-                            tipoNormalizado.includes('clínica') ||
                             tipoNormalizado.includes('clinica') ||
                             tipoNormalizado.includes('instituto') ||
                             tipoNormalizado.includes('sanatorio') ||
                             tipoNormalizado.includes('medical') ||
-                            tipoNormalizado.includes('médico');
+                            tipoNormalizado.includes('medico');
                         break;
                     case 'vacunatorio':
                         matchesType = tipoNormalizado.includes('vacunatorio') ||
@@ -394,7 +486,6 @@ class VacunatoriosMapOptimized {
                     case 'farmacia':
                         matchesType = tipoNormalizado.includes('farmacia') ||
                             tipoNormalizado.includes('pharmacy') ||
-                            tipoNormalizado.includes('droguería') ||
                             tipoNormalizado.includes('drogueria');
                         break;
                     default:
@@ -419,28 +510,27 @@ class VacunatoriosMapOptimized {
         this.updateResultsList(filteredVacunatorios);
 
         if (this.coordinatesData.length > 0) {
-            const chunkSize = 20;
+            const chunkSize = 8;
             let processed = 0;
 
-            const processChunk = () => {
+            const processChunk = async () => {
                 const chunk = filteredVacunatorios.slice(processed, processed + chunkSize);
 
-                chunk.forEach(vacunatorio => {
-                    if (vacunatorio.lat && vacunatorio.lng) {
-                        this.addMarkerFromCoordinates(vacunatorio);
-                    }
+                const geocodePromises = chunk.map(async (vacunatorio) => {
+                    await this.addMarkerFromAddress(vacunatorio);
                 });
 
+                await Promise.all(geocodePromises);
                 processed += chunkSize;
 
                 if (processed < filteredVacunatorios.length) {
-                    requestAnimationFrame(processChunk);
+                    setTimeout(processChunk, 250);
                 } else {
                     this.finalizarFiltrado();
                 }
             };
 
-            requestAnimationFrame(processChunk);
+            processChunk();
         }
     }
 
@@ -605,7 +695,7 @@ class VacunatoriosMapOptimized {
                             <path d="M12,2C15.31,2 18,4.66 18,7.95C18,12.41 12,22 12,22S6,12.41 6,7.95C6,4.66 8.69,2 12,2M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6Z"/>
                         </svg>
                         <div>
-                            <div class="info-label">Dirección</div>
+                            <div class="info-label">Direccion</div>
                             <div class="info-value">${direccionCompleta}</div>
                         </div>
                     </div>
@@ -615,7 +705,7 @@ class VacunatoriosMapOptimized {
                                 <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
                             </svg>
                             <div>
-                                <div class="info-label">Teléfono</div>
+                                <div class="info-label">Telefono</div>
                                 <div class="info-value">${telefono}</div>
                             </div>
                         </div>
@@ -646,7 +736,7 @@ class VacunatoriosMapOptimized {
             container.innerHTML = `
                 <div class="sin-resultados">
                     <h4>No se encontraron resultados</h4>
-                    <p>Prueba modificando los filtros de búsqueda</p>
+                    <p>Prueba modificando los filtros de bÃºsqueda</p>
                 </div>
             `;
             return;
@@ -680,7 +770,7 @@ class VacunatoriosMapOptimized {
             moreDiv.className = 'more-results';
             moreDiv.innerHTML = `
                 <p>Mostrando ${itemsToShow} de ${vacunatorios.length} resultados.
-                Usa los filtros para refinar la búsqueda.</p>
+                Usa los filtros para refinar la bÃºsqueda.</p>
             `;
             container.appendChild(moreDiv);
         }
@@ -779,7 +869,7 @@ class VacunatoriosMapOptimized {
         try {
             localStorage.setItem(this.COORDINATES_CACHE_KEY, JSON.stringify(cacheData));
         } catch (error) {
-            console.error('Error guardando en caché:', error);
+            console.error('Error guardando en cachÃ©:', error);
             this.clearOldCache();
         }
     }
@@ -804,7 +894,7 @@ class VacunatoriosMapOptimized {
 
             return data;
         } catch (error) {
-            console.error('Error recuperando caché:', error);
+            console.error('Error recuperando cachÃ©:', error);
             return null;
         }
     }
@@ -814,7 +904,7 @@ class VacunatoriosMapOptimized {
             localStorage.removeItem('vacunatorios_cache_v5');
             localStorage.removeItem('coordinates_cache_v5');
         } catch (error) {
-            console.error('Error limpiando caché:', error);
+            console.error('Error limpiando cachÃ©:', error);
         }
     }
 
@@ -902,7 +992,7 @@ class VacunatoriosMapOptimized {
             tipoFilter.addEventListener('change', (e) => {
                 this.filters.tipo = e.target.value;
                 console.log('FILTRO TIPO CAMBIADO A:', this.filters.tipo);
-                console.log('¿Hay provincia seleccionada?', this.filters.provincia);
+                console.log('Â¿Hay provincia seleccionada?', this.filters.provincia);
                 if (this.filters.provincia) {
                     console.log('Ejecutando filtrado...');
                     this.filterVacunatorios();
@@ -1029,7 +1119,7 @@ class VacunatoriosMapOptimized {
         try {
             localStorage.setItem(this.CACHE_KEY, JSON.stringify(cacheData));
         } catch (error) {
-            console.error('Error guardando en caché:', error);
+            console.error('Error guardando en cachÃ©:', error);
         }
     }
 
@@ -1053,7 +1143,7 @@ class VacunatoriosMapOptimized {
 
             return data;
         } catch (error) {
-            console.error('Error recuperando caché:', error);
+            console.error('Error recuperando cachÃ©:', error);
             return null;
         }
     }
@@ -1064,6 +1154,7 @@ class VacunatoriosMapOptimized {
         localStorage.removeItem(this.CACHE_KEY);
         localStorage.removeItem(this.COORDINATES_CACHE_KEY);
         localStorage.removeItem(this.PRELOAD_CACHE_KEY);
+        localStorage.removeItem(this.GEOCODE_CACHE_KEY);
         await this.loadVacunatoriosWithCoordinates();
     }
 }
@@ -1103,7 +1194,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     container.innerHTML = `
                         <div class="sin-resultados">
                             <h4>Error cargando datos</h4>
-                            <p>Por favor, recarga la página</p>
+                            <p>Por favor, recarga la pÃ¡gina</p>
                         </div>
                     `;
                 }
