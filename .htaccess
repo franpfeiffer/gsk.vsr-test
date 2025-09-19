@@ -1,4 +1,52 @@
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^/]+)$ $1.html [L]
+
+# Bloquear todos los métodos HTTP excepto GET y POST
+RewriteCond %{REQUEST_METHOD} !^(GET|POST|HEAD)$ [NC]
+RewriteRule .* - [F,L]
+
+# Usar LimitExcept en lugar de Limit para enfoque de lista blanca
+# Restringir acceso para métodos que NO sean GET o POST
+<LimitExcept GET POST HEAD>
+    Require all denied
+</LimitExcept>
+
+# ===== CONFIGURACIONES ADICIONALES DE SEGURIDAD =====
+
+# Ocultar información del servidor
+ServerTokens Prod
+Header unset Server
+Header always unset X-Powered-By
+
+# Prevenir ataques de clickjacking
+Header always append X-Frame-Options SAMEORIGIN
+
+# Prevenir MIME type sniffing
+Header always set X-Content-Type-Options nosniff
+
+# Habilitar XSS Protection
+Header always set X-XSS-Protection "1; mode=block"
+
+# Configurar Content Security Policy básico
+Header always set Content-Security-Policy "default-src 'self'"
+
+# Prevenir acceso a archivos sensibles
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|inc|bak)$">
+    Require all denied
+</FilesMatch>
+
+# Configurar headers de seguridad para HTTPS
+<IfModule mod_headers.c>
+    Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Desactivar métodos HTTP peligrosos a nivel de directorio
+<RequireAll>
+    Require all granted
+    Require not method TRACE
+    Require not method TRACK
+    Require not method OPTIONS
+    Require not method DELETE
+    Require not method PUT
+    Require not method PATCH
+</RequireAll>
