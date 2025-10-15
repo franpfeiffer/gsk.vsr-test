@@ -1041,15 +1041,25 @@
 
     .panel-mapa {
         order: -1;
-        height: 600px;
+        height: 500px;
+        min-height: 500px;
+        display: block !important;
+    }
+
+    #mapa {
+        height: 100% !important;
+        min-height: 500px;
+        display: block !important;
+        position: relative;
     }
 
     .panel-izquierdo {
-        max-height: 3000px;
+        order: 2;
+        max-height: none;
     }
 
     .lista-resultados {
-        max-height: 300px;
+        max-height: 400px;
     }
 }
 
@@ -1057,23 +1067,39 @@
     .vacunatorios-container {
         grid-template-columns: 1fr;
         height: auto;
-        margin: 1rem;
+        margin: 0.5rem;
     }
 
     .panel-mapa {
         order: -1;
-        height: 600px;
+        height: 400px;
+        min-height: 400px;
+        display: block !important;
+        width: 100%;
+    }
+
+    #mapa {
+        height: 100% !important;
+        min-height: 400px;
+        display: block !important;
+        width: 100%;
     }
 
     .panel-izquierdo {
-        max-height: 3000px;
+        order: 2;
+        max-height: none;
     }
+
     .filtros-grid {
         grid-template-columns: 1fr;
     }
 
     .header-busqueda {
         padding: 0.5rem;
+    }
+
+    .header-busqueda p {
+        display: none;
     }
 
     .seccion-filtros {
@@ -1085,6 +1111,10 @@
 
     .seccion-resultados {
         padding: 1rem;
+    }
+
+    .lista-resultados {
+        max-height: 350px;
     }
 }
 
