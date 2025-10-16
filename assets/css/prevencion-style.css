@@ -1033,39 +1033,23 @@
 }
 
 @media (max-width: 1024px) {
-    .vacunatorios-section {
-        display: flex;
-        flex-direction: column;
-    }
-
     .vacunatorios-container {
         grid-template-columns: 1fr;
         height: auto;
         margin: 1rem;
-        order: 1;
-    }
-
-    .disclaimer-container {
-        order: 2;
-    }
-
-    .panel-mapa {
-        order: 2;
-        height: 500px;
-        min-height: 500px;
-        display: block !important;
-    }
-
-    #mapa {
-        height: 100% !important;
-        min-height: 500px;
-        display: block !important;
-        position: relative;
+        display: flex;
+        flex-direction: column;
     }
 
     .panel-izquierdo {
         order: 1;
-        max-height: none;
+    }
+
+    #mapa {
+        order: 2;
+        height: 500px;
+        min-height: 500px;
+        width: 100%;
     }
 
     .lista-resultados {
@@ -1074,40 +1058,15 @@
 }
 
 @media (max-width: 768px) {
-    .vacunatorios-section {
+    .vacunatorios-container {
+        margin: 0.5rem;
         display: flex;
         flex-direction: column;
     }
 
-    .vacunatorios-container {
-        grid-template-columns: 1fr;
-        height: auto;
-        margin: 0.5rem;
-        order: 1;
-    }
-
-    .disclaimer-container {
-        order: 2;
-    }
-
-    .panel-mapa {
-        order: 2;
+    #mapa {
         height: 400px;
         min-height: 400px;
-        display: block !important;
-        width: 100%;
-    }
-
-    #mapa {
-        height: 100% !important;
-        min-height: 400px;
-        display: block !important;
-        width: 100%;
-    }
-
-    .panel-izquierdo {
-        order: 1;
-        max-height: none;
     }
 
     .filtros-grid {
@@ -1118,14 +1077,8 @@
         padding: 0.5rem;
     }
 
-    .header-busqueda p {
-        display: none;
-    }
-
     .seccion-filtros {
-        padding-right: 1rem;
-        padding-left: 1rem;
-        padding-bottom: 0;
+        padding: 1rem;
         padding-top: 8px;
     }
 
@@ -1598,9 +1551,9 @@
     justify-content: center;
     max-width: 1400px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
     font-size: 12px;
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
     color: #333;
+    order: 3;
 }
