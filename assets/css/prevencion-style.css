@@ -1033,14 +1033,24 @@
 }
 
 @media (max-width: 1024px) {
+    .vacunatorios-section {
+        display: flex;
+        flex-direction: column;
+    }
+
     .vacunatorios-container {
         grid-template-columns: 1fr;
         height: auto;
         margin: 1rem;
+        order: 1;
+    }
+
+    .disclaimer-container {
+        order: 2;
     }
 
     .panel-mapa {
-        order: -1;
+        order: 2;
         height: 500px;
         min-height: 500px;
         display: block !important;
@@ -1054,7 +1064,7 @@
     }
 
     .panel-izquierdo {
-        order: 2;
+        order: 1;
         max-height: none;
     }
 
@@ -1064,14 +1074,24 @@
 }
 
 @media (max-width: 768px) {
+    .vacunatorios-section {
+        display: flex;
+        flex-direction: column;
+    }
+
     .vacunatorios-container {
         grid-template-columns: 1fr;
         height: auto;
         margin: 0.5rem;
+        order: 1;
+    }
+
+    .disclaimer-container {
+        order: 2;
     }
 
     .panel-mapa {
-        order: -1;
+        order: 2;
         height: 400px;
         min-height: 400px;
         display: block !important;
@@ -1086,7 +1106,7 @@
     }
 
     .panel-izquierdo {
-        order: 2;
+        order: 1;
         max-height: none;
     }
 
