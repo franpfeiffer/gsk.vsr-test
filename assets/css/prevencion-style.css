@@ -20,6 +20,21 @@
     width: 100%;
 }
 
+.disclaimer-content {
+    background: white;
+    min-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    padding: 12px;
+    font-size: 10px;
+    color: #6c757d;
+    line-height: 1.4;
+}
+
+
 .container__content-first-paragraph h2 {
     color: var(--color-primario-brand-base, #1F4827);
     font-family: Roboto;
@@ -1546,14 +1561,13 @@
 }
 
 .disclaimer-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    display: grid;
+    margin: auto;
     max-width: 1400px;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    font-size: 12px;
-    color: #333;
-    order: 3;
+}
+.disclaimer-content a {
+    color: #7666EA;
+    text-decoration: underline;
+    cursor: pointer;
 }
