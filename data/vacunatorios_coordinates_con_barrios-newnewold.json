@@ -135,13 +135,12 @@
       "telefono": "(0351)425-0855",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.4134375,
-      "lng": -64.1881173,
+      "lat": -31.3182849,
+      "lng": -64.3090956,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "336, 9 de Julio, La Peatonal, Centro, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5000, Argentina",
-      "barrio": "Saldán Centro",
-      "corregido": true
+      "displayName": "336, 9 de Julio, Saldán Centro, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5000, Argentina",
+      "barrio": "Saldán Centro"
     },
     {
       "id": 8,
@@ -172,13 +171,12 @@
       "telefono": "(011)4511-2181",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5793045,
-      "lng": -58.4051613,
+      "lat": -34.5931942,
+      "lng": -58.3750673,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Embajada de Corea del Sur, 2395, Avenida Del Libertador, Palermo Norte, Palermo, Buenos Aires, Comuna 14, Ciudad Autónoma de Buenos Aires, 1425, Argentina",
-      "barrio": "Retiro",
-      "corregido": true
+      "displayName": "53 - Av. Del Libertador, Avenida Crucero Belgrano, Retiro, Buenos Aires, Comuna 1, Ciudad Autónoma de Buenos Aires, C1004AAW, Argentina",
+      "barrio": "Retiro"
     },
     {
       "id": 10,
@@ -263,13 +261,12 @@
       "telefono": "(011)4554-2255",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5788156,
-      "lng": -58.4697891,
+      "lat": -34.5701184,
+      "lng": -58.4581352,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "313 - De Los Incas, Avenida de los Incas, Villa Ortúzar, Buenos Aires, Distrito Audiovisual, Comuna 15, Ciudad Autónoma de Buenos Aires, C1430EEO, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "Avenida de los Incas, Colegiales, Buenos Aires, Comuna 13, Ciudad Autónoma de Buenos Aires, C1426EJP, Argentina",
+      "barrio": null
     },
     {
       "id": 15,
@@ -822,13 +819,12 @@
       "telefono": "(011)4554-7764",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5728992,
-      "lng": -58.4464086,
+      "lat": -34.5867518,
+      "lng": -58.4554902,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Banco Nación, 2668, Avenida Federico Lacroze, Colegiales, Buenos Aires, Comuna 13, Ciudad Autónoma de Buenos Aires, C1426CQO, Argentina",
-      "barrio": "Chacarita",
-      "corregido": true
+      "displayName": "Federico Lacroze, Avenida Federico Lacroze, Chacarita, Buenos Aires, Distrito Audiovisual, Comuna 15, Ciudad Autónoma de Buenos Aires, C1427BPG, Argentina",
+      "barrio": "Chacarita"
     },
     {
       "id": 46,
@@ -841,13 +837,12 @@
       "telefono": "(011)4382-9318",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5750394,
-      "lng": -58.4636174,
+      "lat": -34.6158261,
+      "lng": -58.4208268,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "La Argentina, 1502, Avenida Forest, Villa Ortúzar, Buenos Aires, Comuna 15, Ciudad Autónoma de Buenos Aires, 1430, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "Belgrano, Almagro, Buenos Aires, Comuna 5, Ciudad Autónoma de Buenos Aires, C1208ABS, Argentina",
+      "barrio": null
     },
     {
       "id": 47,
@@ -914,13 +909,12 @@
       "telefono": "(011)4555-5520",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5816732,
-      "lng": -58.4483275,
+      "lat": -34.578791,
+      "lng": -58.4691999,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Farmacity, 284, Avenida Álvarez Thomas, Chacarita, Buenos Aires, Distrito Audiovisual, Comuna 15, Ciudad Autónoma de Buenos Aires, C1427BZC, Argentina",
-      "barrio": "Villa Ortúzar",
-      "corregido": true
+      "displayName": "Banco Nación, 1994, Avenida Álvarez Thomas, Villa Ortúzar, Buenos Aires, Distrito Audiovisual, Comuna 15, Ciudad Autónoma de Buenos Aires, 1427, Argentina",
+      "barrio": "Villa Ortúzar"
     },
     {
       "id": 51,
@@ -1203,13 +1197,12 @@
       "telefono": "(011)4583-2998",
       "apVacuna": "Si",
       "apVacunaMenor": "No",
-      "lat": -34.6114498,
-      "lng": -58.4532537,
+      "lat": -34.6174443,
+      "lng": -58.4680662,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Banco Nación, 1800, Avenida Gaona, Caballito, Buenos Aires, Comuna 6, Ciudad Autónoma de Buenos Aires, C1416DRS, Argentina",
-      "barrio": "Flores",
-      "corregido": true
+      "displayName": "3004, Avenida Gaona, Flores, Buenos Aires, Comuna 7, Ciudad Autónoma de Buenos Aires, 1404, Argentina",
+      "barrio": "Flores"
     },
     {
       "id": 67,
@@ -1258,13 +1251,12 @@
       "telefono": "(011)4554-5568",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5728992,
-      "lng": -58.4464086,
+      "lat": -34.5867518,
+      "lng": -58.4554902,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Banco Nación, 2668, Avenida Federico Lacroze, Colegiales, Buenos Aires, Comuna 13, Ciudad Autónoma de Buenos Aires, C1426CQO, Argentina",
-      "barrio": "Chacarita",
-      "corregido": true
+      "displayName": "Federico Lacroze, Avenida Federico Lacroze, Chacarita, Buenos Aires, Distrito Audiovisual, Comuna 15, Ciudad Autónoma de Buenos Aires, C1427BPG, Argentina",
+      "barrio": "Chacarita"
     },
     {
       "id": 70,
@@ -1295,13 +1287,12 @@
       "telefono": "(011)4782-3737",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5682493,
-      "lng": -58.447853,
+      "lat": -34.5613393,
+      "lng": -58.4567063,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "La Argentina, 1191, Avenida Cabildo, Palermo, Buenos Aires, Comuna 14, Ciudad Autónoma de Buenos Aires, C1426, Argentina",
-      "barrio": "Barrio Chino",
-      "corregido": true
+      "displayName": "Farmacity, 2151, Avenida Cabildo, Barrio Chino, Belgrano, Buenos Aires, Comuna 13, Ciudad Autónoma de Buenos Aires, C1428AAD, Argentina",
+      "barrio": "Barrio Chino"
     },
     {
       "id": 72,
@@ -1404,13 +1395,12 @@
       "telefono": "(011)4801-7401",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.6026898,
-      "lng": -58.4046155,
+      "lat": -34.5898936,
+      "lng": -58.400019,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Asociacion Hebrea Argentina de Socorros Mutuos, 645, Avenida Pueyrredón, Once, Balvanera, Buenos Aires, Comuna 3, Ciudad Autónoma de Buenos Aires, C1032ABT, Argentina",
-      "barrio": "Barrio Norte",
-      "corregido": true
+      "displayName": "Farmacity, 1845, Avenida Pueyrredón, Barrio Norte, Recoleta, Buenos Aires, Comuna 2, Ciudad Autónoma de Buenos Aires, C1119ACO, Argentina",
+      "barrio": "Barrio Norte"
     },
     {
       "id": 78,
@@ -1801,13 +1791,12 @@
       "telefono": "(011)4780-0001/0005",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5426814,
-      "lng": -58.4732214,
+      "lat": -34.5646375,
+      "lng": -58.4547107,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Correo Argentino, 4576, Avenida Cabildo, Saavedra, Buenos Aires, Comuna 12, Ciudad Autónoma de Buenos Aires, C1429, Argentina",
-      "barrio": "Barrio Chino",
-      "corregido": true
+      "displayName": "1840, Avenida Cabildo, Barrio Chino, Belgrano, Buenos Aires, Comuna 13, Ciudad Autónoma de Buenos Aires, C1428AAN, Argentina",
+      "barrio": "Barrio Chino"
     },
     {
       "id": 100,
@@ -1874,13 +1863,12 @@
       "telefono": "(011)4381-1214",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.6042369,
-      "lng": -58.4119927,
+      "lat": -34.6044623,
+      "lng": -58.395836,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Banco Nación, 3302, Avenida Corrientes, Abasto, Balvanera, Buenos Aires, Comuna 3, Ciudad Autónoma de Buenos Aires, 1193, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "Avenida Corrientes, Balvanera, Buenos Aires, Comuna 3, Ciudad Autónoma de Buenos Aires, C1045AAP, Argentina",
+      "barrio": null
     },
     {
       "id": 104,
@@ -1911,13 +1899,12 @@
       "telefono": "(011)4807-2066",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5814909,
-      "lng": -58.4153849,
+      "lat": -34.5875522,
+      "lng": -58.3972196,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Aurum Argentina, Avenida General Las Heras, Palermo Botánico, Palermo, Buenos Aires, Comuna 14, Ciudad Autónoma de Buenos Aires, C1425ATD, Argentina",
-      "barrio": "Recoleta",
-      "corregido": true
+      "displayName": "Las Heras, Avenida General Las Heras, La Isla, Recoleta, Buenos Aires, Comuna 2, Ciudad Autónoma de Buenos Aires, C1127AAR, Argentina",
+      "barrio": "Recoleta"
     },
     {
       "id": 106,
@@ -2038,13 +2025,12 @@
       "telefono": "(011)4809-0666",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5921977,
-      "lng": -58.4271533,
+      "lat": -34.5898239,
+      "lng": -58.3787619,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "World Argentina, Avenida Raúl Scalabrini Ortiz, Palermo Soho, Palermo, Buenos Aires, Comuna 14, Ciudad Autónoma de Buenos Aires, C1414DOA, Argentina",
-      "barrio": "Retiro",
-      "corregido": true
+      "displayName": "Museo Nacional Ferroviario, 405, Avenida Del Libertador, Retiro, Buenos Aires, Comuna 1, Ciudad Autónoma de Buenos Aires, C1104AJN, Argentina",
+      "barrio": "Retiro"
     },
     {
       "id": 113,
@@ -2057,13 +2043,12 @@
       "telefono": "(011)4312-0227",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5952293,
-      "lng": -58.3786115,
+      "lat": -34.595961,
+      "lng": -58.3932128,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Farmacity, 802, Avenida Santa Fe, Retiro, Buenos Aires, Comuna 1, Ciudad Autónoma de Buenos Aires, C1059ABP, Argentina",
-      "barrio": "Recoleta",
-      "corregido": true
+      "displayName": "Santa Fe (F), Avenida Santa Fe, Recoleta, Buenos Aires, Comuna 2, Ciudad Autónoma de Buenos Aires, C1060ABQ, Argentina",
+      "barrio": "Recoleta"
     },
     {
       "id": 114,
@@ -2184,13 +2169,12 @@
       "telefono": "(011)4780-1060",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5793045,
-      "lng": -58.4051613,
+      "lat": -34.5931942,
+      "lng": -58.3750673,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Embajada de Corea del Sur, 2395, Avenida Del Libertador, Palermo Norte, Palermo, Buenos Aires, Comuna 14, Ciudad Autónoma de Buenos Aires, 1425, Argentina",
-      "barrio": "Retiro",
-      "corregido": true
+      "displayName": "53 - Av. Del Libertador, Avenida Crucero Belgrano, Retiro, Buenos Aires, Comuna 1, Ciudad Autónoma de Buenos Aires, C1004AAW, Argentina",
+      "barrio": "Retiro"
     },
     {
       "id": 121,
@@ -2203,13 +2187,12 @@
       "telefono": "(011)4961-9024",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.6090836,
-      "lng": -58.4441155,
+      "lat": -34.5987704,
+      "lng": -58.4036974,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "991, Avenida Doctor Honorio Pueyrredón, Caballito, Buenos Aires, Comuna 6, Ciudad Autónoma de Buenos Aires, C1405BAT, Argentina",
-      "barrio": "Balvanera",
-      "corregido": true
+      "displayName": "991, Avenida Pueyrredón, Balvanera, Buenos Aires, Comuna 3, Ciudad Autónoma de Buenos Aires, C1120AAP, Argentina",
+      "barrio": "Balvanera"
     },
     {
       "id": 122,
@@ -2510,13 +2493,12 @@
       "telefono": "(0351)423-9680",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -32.5461909,
-      "lng": -62.9892909,
+      "lat": -32.6323155,
+      "lng": -62.6908474,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "396, Hipólito Irigoyen (Oeste), Barrio El Polvorín, Ballesteros, Municipio de Ballesteros, Pedanía Ballesteros, Departamento Unión, Provincia de Córdoba, X2550, Argentina",
-      "barrio": "Bell Ville",
-      "corregido": true
+      "displayName": "396, Hipolito Irigoyen, Campo Del Oeste, Bell Ville, Municipio de Bell Ville, Pedanía Bell Ville, Departamento Unión, Provincia de Córdoba, X2550, Argentina",
+      "barrio": "Bell Ville"
     },
     {
       "id": 139,
@@ -2673,13 +2655,12 @@
       "telefono": "(0351) 4829024",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.3829979,
-      "lng": -64.2225998,
+      "lat": -31.3668336,
+      "lng": -64.2342249,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida Rafael Núñez 3540, Avenida Octavio Pinto, Altos de Villa Cabrera, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5009, Argentina",
-      "barrio": "Villa Centenario",
-      "corregido": true
+      "displayName": "4418, Avenida Rafael Núñez, Villa Centenario, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5009, Argentina",
+      "barrio": "Villa Centenario"
     },
     {
       "id": 148,
@@ -2692,13 +2673,12 @@
       "telefono": "(011)4704-6565",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5682493,
-      "lng": -58.447853,
+      "lat": -34.5547171,
+      "lng": -58.4630046,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "La Argentina, 1191, Avenida Cabildo, Palermo, Buenos Aires, Comuna 14, Ciudad Autónoma de Buenos Aires, C1426, Argentina",
-      "barrio": "Núñez",
-      "corregido": true
+      "displayName": "2967, Avenida Cabildo, Núñez, Buenos Aires, Comuna 13, Ciudad Autónoma de Buenos Aires, C1429AAA, Argentina",
+      "barrio": "Núñez"
     },
     {
       "id": 149,
@@ -2711,13 +2691,12 @@
       "telefono": "(0351)460-0844",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.9109348,
-      "lng": -63.6917453,
+      "lat": -31.0159653,
+      "lng": -62.0705715,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "60, Pueyrredon, Zona Sur, Oncativo, Municipio de Oncativo, Pedanía Impira, Departamento Río Segundo, Provincia de Córdoba, X5987, Argentina",
-      "barrio": "Porteña",
-      "corregido": true
+      "displayName": "60, Pueyrredon, Porteña, Municipio de Porteña, Pedanía Libertad, Departamento San Justo, Provincia de Córdoba, X2400, Argentina",
+      "barrio": "Porteña"
     },
     {
       "id": 150,
@@ -2802,13 +2781,12 @@
       "telefono": "(011)4912-9149",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.6206272,
-      "lng": -58.4163772,
+      "lat": -34.6379951,
+      "lng": -58.4157986,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Banco Nación, 3599, Avenida Independencia, Almagro, Buenos Aires, Comuna 5, Ciudad Autónoma de Buenos Aires, C1225ABD, Argentina",
-      "barrio": "Boedo",
-      "corregido": true
+      "displayName": "Farmacity, 2054, Avenida Boedo, Boedo, Buenos Aires, Distrito Tecnológico, Comuna 5, Ciudad Autónoma de Buenos Aires, C1437, Argentina",
+      "barrio": "Boedo"
     },
     {
       "id": 155,
@@ -2839,13 +2817,12 @@
       "telefono": "(011)4511-3053",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5426814,
-      "lng": -58.4732214,
+      "lat": -34.5515081,
+      "lng": -58.4663885,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Correo Argentino, 4576, Avenida Cabildo, Saavedra, Buenos Aires, Comuna 12, Ciudad Autónoma de Buenos Aires, C1429, Argentina",
-      "barrio": "Núñez",
-      "corregido": true
+      "displayName": "3422, Avenida Cabildo, Núñez, Buenos Aires, Comuna 13, Ciudad Autónoma de Buenos Aires, C1429AAS, Argentina",
+      "barrio": "Núñez"
     },
     {
       "id": 157,
@@ -2912,13 +2889,12 @@
       "telefono": "(03446)424-914/460",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -32.6800118,
-      "lng": -58.894237,
+      "lat": -33.0094528,
+      "lng": -58.5168018,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Bulevar 25 de Mayo, Municipio de Urdinarrain, Distrito San Antonio, Departamento Gualeguaychú, Entre Ríos, Argentina",
-      "barrio": "Barrio Centro",
-      "corregido": true
+      "displayName": "25 de Mayo, 900, 25 de Mayo, Centro, Barrio Centro, Gualeguaychú, Distrito Costa Uruguay Sur, Departamento Gualeguaychú, 2820, Argentina",
+      "barrio": "Barrio Centro"
     },
     {
       "id": 161,
@@ -3075,13 +3051,12 @@
       "telefono": "(0353)454-9996",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -29.9027939,
-      "lng": -63.7290001,
+      "lat": -32.4113351,
+      "lng": -63.2399969,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "25 de Mayo, Villa de María del Río Seco, El Palomar, Villa de María, Municipio de Villa de María, Pedanía Villa de María, Departamento Río Seco, Provincia de Córdoba, X5248, Argentina",
-      "barrio": "Centro Este",
-      "corregido": true
+      "displayName": "156, 25 de Mayo, Centro Este, Villa María, Municipio de Villa María, Pedanía Villa María, Departamento General San Martín, Provincia de Córdoba, 5900, Argentina",
+      "barrio": "Centro Este"
     },
     {
       "id": 170,
@@ -3508,13 +3483,12 @@
       "telefono": "351-4831366",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.4319323,
-      "lng": -64.2352973,
+      "lat": -32.6783081,
+      "lng": -62.0868778,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida Fuerza Aérea, Ameghino Sur, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5000, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "Fuerza Aérea Argentina, Municipio de Marcos Juárez, Pedanía Espinillos, Departamento Marcos Juárez, Provincia de Córdoba, X2580, Argentina",
+      "barrio": null
     },
     {
       "id": 194,
@@ -3545,13 +3519,12 @@
       "telefono": "3514863961",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.4703491,
-      "lng": -64.2042066,
+      "lat": -31.4842198,
+      "lng": -64.2041817,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida Vélez Sarsfield, Mirizzi, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5017, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "Avenida Vélez Sarsfield, Comercial, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5017, Argentina",
+      "barrio": null
     },
     {
       "id": 196,
@@ -4680,13 +4653,12 @@
       "telefono": "(011)4832-7681",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5941049,
-      "lng": -58.379282,
+      "lat": -34.584507,
+      "lng": -58.4152256,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Arenales, Retiro, Buenos Aires, Comuna 1, Ciudad Autónoma de Buenos Aires, C1059ABC, Argentina",
-      "barrio": "Palermo",
-      "corregido": true
+      "displayName": "3810, Arenales, Alto Palermo, Palermo, Buenos Aires, Comuna 14, Ciudad Autónoma de Buenos Aires, C1425DBT, Argentina",
+      "barrio": "Palermo"
     },
     {
       "id": 259,
@@ -4807,13 +4779,12 @@
       "telefono": "48613580",
       "apVacuna": "Si",
       "apVacunaMenor": "Si",
-      "lat": -34.6058191,
-      "lng": -58.4246865,
+      "lat": -34.6055832,
+      "lng": -58.3734049,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Brocca, 4101, Teniente General Juan Domingo Perón, Almagro, Buenos Aires, Comuna 5, Ciudad Autónoma de Buenos Aires, C1199ABD, Argentina",
-      "barrio": "San Nicolás",
-      "corregido": true
+      "displayName": "Teniente General Juan Domingo Perón, Microcentro, San Nicolás, Buenos Aires, Comuna 1, Ciudad Autónoma de Buenos Aires, C1038AAJ, Argentina",
+      "barrio": "San Nicolás"
     },
     {
       "id": 266,
@@ -6158,13 +6129,12 @@
       "telefono": "(03472)426-769",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -32.6900035,
-      "lng": -62.1039949,
+      "lat": -32.9857922,
+      "lng": -62.0277078,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Leandro N. Alem, Municipio de Marcos Juárez, Pedanía Espinillos, Departamento Marcos Juárez, Provincia de Córdoba, X2580, Argentina",
-      "barrio": "Los Surgentes",
-      "corregido": true
+      "displayName": "498, Leandro N. Alem, Los Surgentes, Municipio de Los Surgentes, Pedanía Cruz Alta, Departamento Marcos Juárez, Provincia de Córdoba, 2581, Argentina",
+      "barrio": "Los Surgentes"
     },
     {
       "id": 341,
@@ -6879,13 +6849,12 @@
       "telefono": "(0351) 3632847",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.4972732,
-      "lng": -64.2578334,
+      "lat": -31.4543744,
+      "lng": -64.20722,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida Armada Argentina, Universitario de Horizonte, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5000, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "Avenida Armada Argentina, Parque Atlántica, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5016, Argentina",
+      "barrio": null
     },
     {
       "id": 381,
@@ -7456,13 +7425,12 @@
       "telefono": "(0351) 3465189",
       "apVacuna": "Si",
       "apVacunaMenor": "Si",
-      "lat": -31.3672169,
-      "lng": -64.2129641,
+      "lat": -31.357451,
+      "lng": -64.2128024,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Santiago Baravino, Las Magnolias, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5008, Argentina",
-      "barrio": "Poeta Lugones",
-      "corregido": true
+      "displayName": "Santiago Baravino, Nuevo Poeta Lugones, Poeta Lugones, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5008, Argentina",
+      "barrio": "Poeta Lugones"
     },
     {
       "id": 413,
@@ -7835,13 +7803,12 @@
       "telefono": "(0343) 6105170",
       "apVacuna": "Si",
       "apVacunaMenor": "No",
-      "lat": -31.7530919,
-      "lng": -60.5203174,
+      "lat": -31.7420505,
+      "lng": -60.5321547,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida Francisco Ramírez, Barrio Olegario Victor Andrade, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, Entre Ríos, E3104HMA, Argentina",
-      "barrio": "Saenz Peña",
-      "corregido": true
+      "displayName": "Paraná, Boulevard Racedo, Saenz Peña, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, 3100, Argentina",
+      "barrio": "Saenz Peña"
     },
     {
       "id": 434,
@@ -9348,13 +9315,12 @@
       "telefono": "(0343) 4155723",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.7726033,
-      "lng": -60.5214227,
+      "lat": -31.7420505,
+      "lng": -60.5321547,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Villegas Paracao, 3739, Avenida de las Américas, Paracao, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, Entre Ríos, 3100, Argentina",
-      "barrio": "Saenz Peña",
-      "corregido": true
+      "displayName": "Paraná, Boulevard Racedo, Saenz Peña, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, 3100, Argentina",
+      "barrio": "Saenz Peña"
     },
     {
       "id": 518,
@@ -10465,13 +10431,12 @@
       "telefono": "3435312712",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.9044179,
-      "lng": -60.4732632,
+      "lat": -31.7420505,
+      "lng": -60.5321547,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Santa Rosa de Lima, Municipio de Villa Fontana, Distrito Sauce, Departamento Paraná, 3114, Argentina",
-      "barrio": "Saenz Peña",
-      "corregido": true
+      "displayName": "Paraná, Boulevard Racedo, Saenz Peña, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, 3100, Argentina",
+      "barrio": "Saenz Peña"
     },
     {
       "id": 580,
@@ -11420,13 +11385,12 @@
       "telefono": "3514214803",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.3699446,
-      "lng": -64.1798253,
+      "lat": -31.4050839,
+      "lng": -64.1853091,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "José Antonio de Sucre, Alta Córdoba de Horizonte, Panamericano, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5000, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "José Antonio de Sucre, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5000, Argentina",
+      "barrio": null
     },
     {
       "id": 633,
@@ -13671,13 +13635,12 @@
       "telefono": "3446411800",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -32.6095003,
-      "lng": -58.7047386,
+      "lat": -31.8537771,
+      "lng": -60.1725711,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida Los Inmigrantes, Aldea San Antonio, Municipio de Aldea San Antonio, Distrito Pehuajó al Norte, Departamento Gualeguaychú, Entre Ríos, Argentina",
-      "barrio": "Junta de Gobierno de Aldea San Antonio",
-      "corregido": true
+      "displayName": "Escuela 17 Aldea San Antonio, Ruta Nacional 18, Junta de Gobierno de Aldea San Antonio, Distrito Quebracho, Departamento Paraná, 3117, Argentina",
+      "barrio": "Junta de Gobierno de Aldea San Antonio"
     },
     {
       "id": 758,
@@ -14338,13 +14301,12 @@
       "telefono": "(0353) 5623866",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.3370689,
-      "lng": -64.174291,
+      "lat": -32.6952975,
+      "lng": -63.7090762,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Liceo Gral. Paz, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5019, Argentina",
-      "barrio": "Las Perdices",
-      "corregido": true
+      "displayName": "298, General Paz, Las Perdices, Municipio de Las Perdices, Pedanía Punta del Agua, Departamento Tercero Arriba, Provincia de Córdoba, 5921, Argentina",
+      "barrio": "Las Perdices"
     },
     {
       "id": 795,
@@ -16553,13 +16515,12 @@
       "telefono": "(011)4502-1300",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.6067666,
-      "lng": -58.5129829,
+      "lat": -34.5972029,
+      "lng": -58.4975054,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Banco Nación, 4410, Avenida Francisco Beiró, Villa Devoto, Buenos Aires, Comuna 11, Ciudad Autónoma de Buenos Aires, 1419, Argentina",
-      "barrio": "Villa del Parque",
-      "corregido": true
+      "displayName": "Nueva Incaica, 3160, Avenida Francisco Beiró, Villa del Parque, Buenos Aires, Comuna 11, Ciudad Autónoma de Buenos Aires, C1419HTH, Argentina",
+      "barrio": "Villa del Parque"
     },
     {
       "id": 918,
@@ -16986,13 +16947,12 @@
       "telefono": "(0299) 4463330",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -38.9546288,
-      "lng": -68.1233586,
+      "lat": -38.9337926,
+      "lng": -69.2495339,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "4305, General San Martín, TCI, Canal V, Neuquén, Municipio de Neuquén, Departamento Confluencia, Neuquén, Q8304ACG, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "San Martín, Cutral Có, Municipio de Cutral Có, Departamento Confluencia, Neuquén, Argentina",
+      "barrio": null
     },
     {
       "id": 942,
@@ -17923,13 +17883,12 @@
       "telefono": "(0351) 8126743",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.4386664,
-      "lng": -64.1281522,
+      "lat": -31.4307018,
+      "lng": -64.1673907,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida Amadeo Sabattini, Empalme, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5000, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "Avenida Amadeo Sabattini, Crisol Norte, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5014, Argentina",
+      "barrio": null
     },
     {
       "id": 994,
@@ -19598,13 +19557,12 @@
       "telefono": "(011) 46411307 / 3530030",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.6150964,
-      "lng": -58.5265484,
+      "lat": -34.5950574,
+      "lng": -58.4943435,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida Francisco Beiró, Villa Real, Buenos Aires, Comuna 10, Ciudad Autónoma de Buenos Aires, C1419IAD, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "Avenida Francisco Beiró, Agronomía, Buenos Aires, Comuna 15, Ciudad Autónoma de Buenos Aires, C1419HTH, Argentina",
+      "barrio": null
     },
     {
       "id": 1087,
@@ -22155,13 +22113,12 @@
       "telefono": "(0343)423-1864",
       "apVacuna": "Si",
       "apVacunaMenor": "Si",
-      "lat": -31.3899821,
-      "lng": -60.0935031,
+      "lat": -31.7420505,
+      "lng": -60.5321547,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Belgrano, Pueblo Brugo, Junta de Gobierno de Pueblo Brugo, Distrito Antonio Tomás, Departamento Paraná, Entre Ríos, E3125, Argentina",
-      "barrio": "Saenz Peña",
-      "corregido": true
+      "displayName": "Paraná, Boulevard Racedo, Saenz Peña, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, 3100, Argentina",
+      "barrio": "Saenz Peña"
     },
     {
       "id": 1229,
@@ -24334,13 +24291,12 @@
       "telefono": "0343-4353381",
       "apVacuna": "Si",
       "apVacunaMenor": "Si",
-      "lat": -31.7770076,
-      "lng": -60.5200741,
+      "lat": -31.7420505,
+      "lng": -60.5321547,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida de las Américas, Paracao, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, Entre Ríos, E3104HMA, Argentina",
-      "barrio": "Saenz Peña",
-      "corregido": true
+      "displayName": "Paraná, Boulevard Racedo, Saenz Peña, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, 3100, Argentina",
+      "barrio": "Saenz Peña"
     },
     {
       "id": 1350,
@@ -24821,13 +24777,12 @@
       "telefono": "(011)4305-3104",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.6369751,
-      "lng": -58.4039274,
+      "lat": -34.6341707,
+      "lng": -58.3900539,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Banco Nación, 2902, Avenida Caseros, Parque Patricios, Buenos Aires, Distrito Tecnológico, Comuna 4, Ciudad Autónoma de Buenos Aires, 1264, Argentina",
-      "barrio": "Barracas",
-      "corregido": true
+      "displayName": "1990, Avenida Caseros, Barracas, Buenos Aires, Comuna 4, Ciudad Autónoma de Buenos Aires, C1264AAN, Argentina",
+      "barrio": "Barracas"
     },
     {
       "id": 1377,
@@ -24840,13 +24795,12 @@
       "telefono": "(011)4304-6813",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.6369751,
-      "lng": -58.4039274,
+      "lat": -34.633896,
+      "lng": -58.388872,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Banco Nación, 2902, Avenida Caseros, Parque Patricios, Buenos Aires, Distrito Tecnológico, Comuna 4, Ciudad Autónoma de Buenos Aires, 1264, Argentina",
-      "barrio": "Barracas",
-      "corregido": true
+      "displayName": "1902, Avenida Caseros, Barracas, Buenos Aires, Comuna 4, Ciudad Autónoma de Buenos Aires, C1280AEB, Argentina",
+      "barrio": "Barracas"
     },
     {
       "id": 1378,
@@ -25237,13 +25191,12 @@
       "telefono": "4902-2006",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.6214843,
-      "lng": -58.4568998,
+      "lat": -34.6302021,
+      "lng": -58.4865436,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida Avellaneda, Flores, Buenos Aires, Comuna 7, Ciudad Autónoma de Buenos Aires, C1406BOS, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "Avenida Avellaneda, Floresta, Buenos Aires, Comuna 10, Ciudad Autónoma de Buenos Aires, 1407, Argentina",
+      "barrio": null
     },
     {
       "id": 1400,
@@ -27884,13 +27837,12 @@
       "telefono": "351- 4260570",
       "apVacuna": "Si",
       "apVacunaMenor": "Si",
-      "lat": -31.415389,
-      "lng": -64.1815496,
+      "lat": -31.7772416,
+      "lng": -63.8003806,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "151, 25 de Mayo, La Peatonal, Centro, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5000, Argentina",
-      "barrio": "Laguna Larga",
-      "corregido": true
+      "displayName": "151, 25 de Mayo, Laguna Larga, Municipio de Laguna Larga, Pedanía Pilar, Departamento Río Segundo, Provincia de Córdoba, X5960, Argentina",
+      "barrio": "Laguna Larga"
     },
     {
       "id": 1547,
@@ -28731,13 +28683,12 @@
       "telefono": "(0343) 4344663",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.7188003,
-      "lng": -60.5291312,
+      "lat": -31.7420505,
+      "lng": -60.5321547,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida Laurencena, Barrio Parque Urquiza, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, Entre Ríos, E3100, Argentina",
-      "barrio": "Saenz Peña",
-      "corregido": true
+      "displayName": "Paraná, Boulevard Racedo, Saenz Peña, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, 3100, Argentina",
+      "barrio": "Saenz Peña"
     },
     {
       "id": 1594,
@@ -29020,13 +28971,12 @@
       "telefono": "(0299) 445-1482 / 15438-7837",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -38.9547312,
-      "lng": -68.1088116,
+      "lat": -40.0742439,
+      "lng": -71.3197579,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "3581, General San Martín, Huiliches, Neuquén, Municipio de Neuquén, Departamento Confluencia, Neuquén, Q8304ACG, Argentina",
-      "barrio": "Villa Lolog",
-      "corregido": true
+      "displayName": "San Martin, Loteo Chihuallanca, Villa Lolog, Municipio de San Martín de los Andes, Departamento Lácar, Neuquén, Argentina",
+      "barrio": "Villa Lolog"
     },
     {
       "id": 1610,
@@ -29453,13 +29403,12 @@
       "telefono": "(0299) 447-4233 / 15438-7809",
       "apVacuna": "Si",
       "apVacunaMenor": "No",
-      "lat": -38.942346,
-      "lng": -68.0626388,
+      "lat": -38.9419156,
+      "lng": -68.1031679,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Farmacias Global, 231, Avenida Doctor Luis Ramón, Área Centro Este, Neuquén, Municipio de Neuquén, Departamento Confluencia, Neuquén, Q8300, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "Doctor Ramón, Gregorio Álvarez, Neuquén, Municipio de Neuquén, Departamento Confluencia, Neuquén, 8300, Argentina",
+      "barrio": null
     },
     {
       "id": 1634,
@@ -30534,13 +30483,12 @@
       "telefono": "(0381) 4323175",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -26.8117958,
-      "lng": -65.2144161,
+      "lat": -26.7989759,
+      "lng": -65.2113678,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida República del Libano, Villa Urquiza, San Miguel de Tucumán, Departamento Capital, Tucumán, T4000, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "Avenida República del Libano, América, San Miguel de Tucumán, Departamento Capital, Tucumán, T4000, Argentina",
+      "barrio": null
     },
     {
       "id": 1694,
@@ -31003,13 +30951,12 @@
       "telefono": "(0299) 442-5509 / 15476-0724",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -38.9547639,
-      "lng": -68.0890247,
+      "lat": -40.0742439,
+      "lng": -71.3197579,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Farmacias Global, 2141, General San Martín, Cumelén, Neuquén, Municipio de Neuquén, Departamento Confluencia, Neuquén, Q8300, Argentina",
-      "barrio": "Villa Lolog",
-      "corregido": true
+      "displayName": "San Martin, Loteo Chihuallanca, Villa Lolog, Municipio de San Martín de los Andes, Departamento Lácar, Neuquén, Argentina",
+      "barrio": "Villa Lolog"
     },
     {
       "id": 1720,
@@ -35630,13 +35577,12 @@
       "telefono": "(0343) 4314789",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.7770076,
-      "lng": -60.5200741,
+      "lat": -31.7420505,
+      "lng": -60.5321547,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida de las Américas, Paracao, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, Entre Ríos, E3104HMA, Argentina",
-      "barrio": "Saenz Peña",
-      "corregido": true
+      "displayName": "Paraná, Boulevard Racedo, Saenz Peña, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, 3100, Argentina",
+      "barrio": "Saenz Peña"
     },
     {
       "id": 1977,
@@ -36477,13 +36423,12 @@
       "telefono": "0343 421-8802",
       "apVacuna": "Si",
       "apVacunaMenor": "No",
-      "lat": -31.7571558,
-      "lng": -60.4849161,
+      "lat": -31.7420505,
+      "lng": -60.5321547,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Río Victoria, Barrio Vitali, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, Entre Ríos, E3106LEQ, Argentina",
-      "barrio": "Saenz Peña",
-      "corregido": true
+      "displayName": "Paraná, Boulevard Racedo, Saenz Peña, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, 3100, Argentina",
+      "barrio": "Saenz Peña"
     },
     {
       "id": 2024,
@@ -37162,13 +37107,12 @@
       "telefono": "(0351)463-0919",
       "apVacuna": "Si",
       "apVacunaMenor": "No",
-      "lat": -31.3668362,
-      "lng": -64.1716382,
+      "lat": -31.4227423,
+      "lng": -64.1931935,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Marcelo T. de Alvear, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5020, Argentina",
-      "barrio": "Güemes",
-      "corregido": true
+      "displayName": "704, Avenida Marcelo T. de Alvear, Güemes, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5000, Argentina",
+      "barrio": "Güemes"
     },
     {
       "id": 2062,
@@ -37559,13 +37503,12 @@
       "telefono": "(0351)4247739",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.4224543,
-      "lng": -64.4900491,
+      "lat": -33.1295607,
+      "lng": -64.3282934,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "155, Chacabuco, Centro Este, Domingo Faustino Sarmiento, Villa Carlos Paz, Municipio de Villa Carlos Paz, Pedanía San Roque, Departamento Punilla, Provincia de Córdoba, 5152, Argentina",
-      "barrio": "Alberdi Norte",
-      "corregido": true
+      "displayName": "155, Chacabuco, Alberdi Norte, Río Cuarto, Municipio de Río Cuarto, Pedanía Río Cuarto, Departamento Río Cuarto, Provincia de Córdoba, X5800, Argentina",
+      "barrio": "Alberdi Norte"
     },
     {
       "id": 2084,
@@ -38172,13 +38115,12 @@
       "telefono": "(03446)-434710",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -32.6896855,
-      "lng": -58.8933296,
+      "lat": -33.0092112,
+      "lng": -58.5037687,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Urquiza, Municipio de Urdinarrain, Distrito Pehuajó al Norte, Departamento Gualeguaychú, Entre Ríos, Argentina",
-      "barrio": "Barrio Centro",
-      "corregido": true
+      "displayName": "Urquiza, 25 de Mayo, Centro, Barrio Centro, Límite de Ejido de Municipio de Gualeguaychú, Distrito Costa Uruguay Sur, Departamento Gualeguaychú, E2822FKB, Argentina",
+      "barrio": "Barrio Centro"
     },
     {
       "id": 2118,
@@ -39775,13 +39717,12 @@
       "telefono": "0343-4077127",
       "apVacuna": "Si",
       "apVacunaMenor": "No",
-      "lat": -31.7212629,
-      "lng": -60.5333872,
+      "lat": -31.7420505,
+      "lng": -60.5321547,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Santiago del Estero, Barrio Parque Urquiza, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, Entre Ríos, E3100, Argentina",
-      "barrio": "Saenz Peña",
-      "corregido": true
+      "displayName": "Paraná, Boulevard Racedo, Saenz Peña, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, 3100, Argentina",
+      "barrio": "Saenz Peña"
     },
     {
       "id": 2207,
@@ -40856,13 +40797,12 @@
       "telefono": "(0341)4965744",
       "apVacuna": "Si",
       "apVacunaMenor": "Si",
-      "lat": -32.9451049,
-      "lng": -60.8908403,
+      "lat": -32.945106,
+      "lng": -60.8760549,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Bulevar de la Esperanza, Tierra de Sueños 3, Tierra de Sueños, Roldán, Municipio de Roldán, Gran Rosario, Departamento San Lorenzo, Santa Fe, S2134, Argentina",
-      "barrio": "Roldán",
-      "corregido": true
+      "displayName": "Bulevar de la Alegría, Tierra de Sueños 3, Tierra de Sueños, Roldán, Municipio de Roldán, Gran Rosario, Departamento San Lorenzo, S2134, Argentina",
+      "barrio": "Roldán"
     },
     {
       "id": 2267,
@@ -43485,13 +43425,12 @@
       "telefono": "(0351) 4641821",
       "apVacuna": "Si",
       "apVacunaMenor": "Si",
-      "lat": -30.8540907,
-      "lng": -64.5115533,
+      "lat": -31.436838,
+      "lng": -64.1760457,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Richieri, Faldas del Uritorco, Centro, Capilla del Monte, Municipio de Capilla del Monte, Pedanía Dolores, Departamento Punilla, Provincia de Córdoba, X5166, Argentina",
-      "barrio": "Rogelio Martínez",
-      "corregido": true
+      "displayName": "Avenida Pablo Richieri 0, Avenida Pablo Ricchieri, Rogelio Martínez, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5000, Argentina",
+      "barrio": "Rogelio Martínez"
     },
     {
       "id": 2413,
@@ -45250,13 +45189,12 @@
       "telefono": "(0351) 5549054",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.9167061,
-      "lng": -63.686697,
+      "lat": -31.0145947,
+      "lng": -62.0785548,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "724, Pueyrredon, Zona Sur, Oncativo, Municipio de Oncativo, Pedanía Impira, Departamento Río Segundo, Provincia de Córdoba, X5987, Argentina",
-      "barrio": "Porteña",
-      "corregido": true
+      "displayName": "724, Pueyrredon, Porteña, Municipio de Porteña, Pedanía Libertad, Departamento San Justo, Provincia de Córdoba, X2400, Argentina",
+      "barrio": "Porteña"
     },
     {
       "id": 2511,
@@ -46619,13 +46557,12 @@
       "telefono": "(011) 4381-1466",
       "apVacuna": "Si",
       "apVacunaMenor": "Si",
-      "lat": -34.588374,
-      "lng": -58.4389795,
+      "lat": -34.5991403,
+      "lng": -58.3862317,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida Córdoba, Chacarita, Buenos Aires, Distrito Audiovisual, Comuna 15, Ciudad Autónoma de Buenos Aires, C1414BBN, Argentina",
-      "barrio": "Retiro",
-      "corregido": true
+      "displayName": "1353, Avenida Córdoba, Retiro, Buenos Aires, Comuna 1, Ciudad Autónoma de Buenos Aires, C1055AAD, Argentina",
+      "barrio": "Retiro"
     },
     {
       "id": 2587,
@@ -47718,13 +47655,12 @@
       "telefono": "(0343) 4343048 / 4762415",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.7608742,
-      "lng": -60.4658068,
+      "lat": -31.7420505,
+      "lng": -60.5321547,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida Almafuerte, Barrio Las Rosas, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, Entre Ríos, E3106LEQ, Argentina",
-      "barrio": "Saenz Peña",
-      "corregido": true
+      "displayName": "Paraná, Boulevard Racedo, Saenz Peña, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, 3100, Argentina",
+      "barrio": "Saenz Peña"
     },
     {
       "id": 2648,
@@ -48781,13 +48717,12 @@
       "telefono": "(0343) 4240444",
       "apVacuna": "Si",
       "apVacunaMenor": "No",
-      "lat": -31.7608742,
-      "lng": -60.4658068,
+      "lat": -31.7420505,
+      "lng": -60.5321547,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida Almafuerte, Barrio Las Rosas, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, Entre Ríos, E3106LEQ, Argentina",
-      "barrio": "Saenz Peña",
-      "corregido": true
+      "displayName": "Paraná, Boulevard Racedo, Saenz Peña, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, 3100, Argentina",
+      "barrio": "Saenz Peña"
     },
     {
       "id": 2707,
@@ -49898,13 +49833,12 @@
       "telefono": "-",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.7201881,
-      "lng": -60.535927,
+      "lat": -31.7420505,
+      "lng": -60.5321547,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Alameda de la Federación, Barrio Parque Urquiza, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, Entre Ríos, E3100, Argentina",
-      "barrio": "Saenz Peña",
-      "corregido": true
+      "displayName": "Paraná, Boulevard Racedo, Saenz Peña, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, 3100, Argentina",
+      "barrio": "Saenz Peña"
     },
     {
       "id": 2769,
@@ -50331,13 +50265,12 @@
       "telefono": "(0351) 4812233",
       "apVacuna": "Si",
       "apVacunaMenor": "No",
-      "lat": -31.6920909,
-      "lng": -64.3952428,
+      "lat": -31.1288154,
+      "lng": -64.4886908,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Santiago Derqui, Chacras de la Carolina, Anisacate, Pedanía Alta Gracia, Departamento Santa María, Provincia de Córdoba, X5186, Argentina",
-      "barrio": "Villa Los Ángeles",
-      "corregido": true
+      "displayName": "Santiago Derqui, Villa Los Ángeles, Valle Hermoso, Municipio de Valle Hermoso, Pedanía San Antonio, Departamento Punilla, Provincia de Córdoba, X5166, Argentina",
+      "barrio": "Villa Los Ángeles"
     },
     {
       "id": 2793,
@@ -50800,13 +50733,12 @@
       "telefono": "(0343) 4071252",
       "apVacuna": "Si",
       "apVacunaMenor": "Si",
-      "lat": -31.7508743,
-      "lng": -60.5199187,
+      "lat": -31.7420505,
+      "lng": -60.5321547,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "3352, Avenida Francisco Ramírez, Barrio Olegario Victor Andrade, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, Entre Ríos, E3104HMA, Argentina",
-      "barrio": "Saenz Peña",
-      "corregido": true
+      "displayName": "Paraná, Boulevard Racedo, Saenz Peña, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, 3100, Argentina",
+      "barrio": "Saenz Peña"
     },
     {
       "id": 2819,
@@ -51161,13 +51093,12 @@
       "telefono": "(011) 2206-6000",
       "apVacuna": "Si",
       "apVacunaMenor": "No",
-      "lat": -34.5756862,
-      "lng": -58.4070783,
+      "lat": -34.5843096,
+      "lng": -58.414641,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Raúl Scalabrini Ortiz, Palermo Norte, Palermo, Buenos Aires, Comuna 14, Ciudad Autónoma de Buenos Aires, C1425DDA, Argentina",
-      "barrio": "Palermo",
-      "corregido": true
+      "displayName": "Raúl Scalabrini Ortiz, Alto Palermo, Palermo, Buenos Aires, Comuna 14, Ciudad Autónoma de Buenos Aires, C1425DBU, Argentina",
+      "barrio": "Palermo"
     },
     {
       "id": 2839,
@@ -51342,13 +51273,12 @@
       "telefono": "(0341) 4985264",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -33.0442139,
-      "lng": -60.608786,
+      "lat": -33.0250796,
+      "lng": -60.633744,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida San Martín, Villa Gobernador Gálvez, Alvear, Municipio de Alvear, Gran Rosario, Departamento Rosario, Santa Fe, S2124KEH, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "Municipio de Villa Gobernador Gálvez, Gran Rosario, Departamento Rosario, S2124, Argentina",
+      "barrio": null
     },
     {
       "id": 2849,
@@ -51613,13 +51543,12 @@
       "telefono": "(0351) 4714489",
       "apVacuna": "Si",
       "apVacunaMenor": "No",
-      "lat": -33.1376917,
-      "lng": -64.3530865,
+      "lat": -31.3983101,
+      "lng": -64.1759391,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Juan B. Justo, General Paz, Río Cuarto, Municipio de Río Cuarto, Pedanía Río Cuarto, Departamento Río Cuarto, Provincia de Córdoba, X5800, Argentina",
-      "barrio": "Alta Córdoba",
-      "corregido": true
+      "displayName": "2359, Avenida Juan B. Justo, Alta Córdoba, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5001, Argentina",
+      "barrio": "Alta Córdoba"
     },
     {
       "id": 2864,
@@ -52766,13 +52695,12 @@
       "telefono": "(03444) 426338",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -32.6813246,
-      "lng": -58.884234,
+      "lat": -32.1753432,
+      "lng": -59.3981393,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Belgrano, Municipio de Urdinarrain, Distrito Pehuajó al Norte, Departamento Gualeguaychú, Entre Ríos, Argentina",
-      "barrio": "Barrio Alborada",
-      "corregido": true
+      "displayName": "Club Belgrano, Gualeguaychú, Barrio Alborada, Maciá, Distrito Raíces al Sur, Departamento Tala, 3177, Argentina",
+      "barrio": "Barrio Alborada"
     },
     {
       "id": 2928,
@@ -56169,13 +56097,12 @@
       "telefono": "(0381) 4274335",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -26.7983319,
-      "lng": -65.1938265,
+      "lat": -26.789169,
+      "lng": -65.2416433,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Emilio Castelar, San Miguel de Tucumán, Departamento Capital, Tucumán, T4000, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "Emilio Castelar, Feput, San Miguel de Tucumán, Departamento Capital, Tucumán, T4000, Argentina",
+      "barrio": null
     },
     {
       "id": 3117,
@@ -57682,13 +57609,12 @@
       "telefono": "(0299) 4463300",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -38.9597329,
-      "lng": -68.075782,
+      "lat": -38.9519679,
+      "lng": -68.0591741,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Repuestos J.I.J., 1186, Juan Julián Lastra, Amulén, Villa Florencia, Neuquén, Municipio de Neuquén, Departamento Confluencia, Neuquén, Q8300, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "Neuquén, Municipio de Neuquén, Departamento Confluencia, Neuquén, Argentina",
+      "barrio": null
     },
     {
       "id": 3201,
@@ -57845,13 +57771,12 @@
       "telefono": "(03571) 412966",
       "apVacuna": "Si",
       "apVacunaMenor": "No",
-      "lat": -32.1794258,
-      "lng": -64.1184305,
+      "lat": -32.1681153,
+      "lng": -64.1184696,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Esperanza, Villa Zoila, Río Tercero, Municipio de Río Tercero, Pedanía Salto, Departamento Tercero Arriba, Provincia de Córdoba, X5850, Argentina",
-      "barrio": "Villa Elisa",
-      "corregido": true
+      "displayName": "Esperanza, Villa Elisa, Río Tercero, Municipio de Río Tercero, Pedanía Salto, Departamento Tercero Arriba, Provincia de Córdoba, X5850, Argentina",
+      "barrio": "Villa Elisa"
     },
     {
       "id": 3210,
@@ -59520,13 +59445,12 @@
       "telefono": "(0351) 6097499",
       "apVacuna": "Si",
       "apVacunaMenor": "Si",
-      "lat": -31.3842273,
-      "lng": -64.2782053,
+      "lat": -31.3653496,
+      "lng": -64.2806969,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida República de China, Natania 19, Valle Escondido, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5003, Argentina",
-      "barrio": "Valle Escondido",
-      "corregido": true
+      "displayName": "Avenida República de China, Jardines del Valle, Valle Escondido, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5003, Argentina",
+      "barrio": "Valle Escondido"
     },
     {
       "id": 3303,
@@ -60439,13 +60363,12 @@
       "telefono": "(03574) 421975",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.3311615,
-      "lng": -63.6217442,
+      "lat": -31.1534804,
+      "lng": -63.402252,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "61, Avenida San Martín, Río Primero, Municipio de Río Primero, Pedanía Viamonte, Departamento Río Primero, Provincia de Córdoba, 5127, Argentina",
-      "barrio": "Villa Santa Rosa",
-      "corregido": true
+      "displayName": "San Martín, Villa Santa Rosa, Municipio de Santa Rosa de Río Primero, Pedanía Santa Rosa, Departamento Río Primero, Provincia de Córdoba, X5133, Argentina",
+      "barrio": "Villa Santa Rosa"
     },
     {
       "id": 3354,
@@ -63014,13 +62937,12 @@
       "telefono": "(3415) 987089",
       "apVacuna": "Si",
       "apVacunaMenor": "No",
-      "lat": -33.0774166,
-      "lng": -60.6920301,
+      "lat": -33.2438342,
+      "lng": -60.7625857,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "El Nogal, Tierra de Sueños Alvear, Alvear, Municipio de Alvear, Gran Rosario, Departamento Rosario, Santa Fe, Argentina",
-      "barrio": "Cuatro Esquinas",
-      "corregido": true
+      "displayName": "El Nogal, Entre Rios, Cuatro Esquinas, Municipio de Carmen del Sauce, Departamento Rosario, 2109, Argentina",
+      "barrio": "Cuatro Esquinas"
     },
     {
       "id": 3497,
@@ -63357,13 +63279,12 @@
       "telefono": "(03471) 493923",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -32.8664303,
-      "lng": -61.6002129,
+      "lat": -32.9636914,
+      "lng": -61.5486433,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Límite departamental Belgrano - Iriondo, Municipio de Villa Eloísa, Departamento Iriondo, Santa Fe, Argentina",
-      "barrio": "Villa Eloísa",
-      "corregido": true
+      "displayName": "Municipio de Villa Eloísa, Domingo Sarmiento, Villa Eloísa, Municipio de Villa Eloísa, Departamento Iriondo, S2503, Argentina",
+      "barrio": "Villa Eloísa"
     },
     {
       "id": 3516,
@@ -64492,13 +64413,12 @@
       "telefono": "(0343) 4353532",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.7530919,
-      "lng": -60.5203174,
+      "lat": -31.7420505,
+      "lng": -60.5321547,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida Francisco Ramírez, Barrio Olegario Victor Andrade, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, Entre Ríos, E3104HMA, Argentina",
-      "barrio": "Saenz Peña",
-      "corregido": true
+      "displayName": "Paraná, Boulevard Racedo, Saenz Peña, Paraná, Municipio de Paraná, Distrito Sauce, Departamento Paraná, 3100, Argentina",
+      "barrio": "Saenz Peña"
     },
     {
       "id": 3579,
@@ -66761,13 +66681,12 @@
       "telefono": "(0351) 2765509",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -31.3842273,
-      "lng": -64.2782053,
+      "lat": -31.3653496,
+      "lng": -64.2806969,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Avenida República de China, Natania 19, Valle Escondido, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5003, Argentina",
-      "barrio": "Valle Escondido",
-      "corregido": true
+      "displayName": "Avenida República de China, Jardines del Valle, Valle Escondido, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5003, Argentina",
+      "barrio": "Valle Escondido"
     },
     {
       "id": 3705,
@@ -66780,13 +66699,12 @@
       "telefono": "(011) 77001454",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -34.5676566,
-      "lng": -58.4439887,
+      "lat": -34.5859557,
+      "lng": -58.4558338,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "Teodoro García, Palermo, Buenos Aires, Comuna 14, Ciudad Autónoma de Buenos Aires, C1426AAL, Argentina",
-      "barrio": null,
-      "corregido": true
+      "displayName": "Teodoro García, Chacarita, Buenos Aires, Distrito Audiovisual, Comuna 15, Ciudad Autónoma de Buenos Aires, C1427BPG, Argentina",
+      "barrio": null
     },
     {
       "id": 3706,
@@ -67663,13 +67581,12 @@
       "telefono": "0353 4206662",
       "apVacuna": "No",
       "apVacunaMenor": "No",
-      "lat": -32.4175673,
-      "lng": -63.2471982,
+      "lat": -32.4232523,
+      "lng": -63.2353508,
       "accuracy": "HIGH",
       "geocodingMethod": "nominatim",
-      "displayName": "271, Rivadavia, Centro Sur, Villa María, Municipio de Villa María, Pedanía Villa María, Departamento General San Martín, Provincia de Córdoba, 5900, Argentina",
-      "barrio": "Santa Ana",
-      "corregido": true
+      "displayName": "271, Madrid, Santa Ana, Villa María, Municipio de Villa María, Pedanía Villa María, Departamento General San Martín, Provincia de Córdoba, 5900, Argentina",
+      "barrio": "Santa Ana"
     },
     {
       "id": 3755,
